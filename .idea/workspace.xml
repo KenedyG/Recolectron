@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="creacion de carpetas">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_05_2024_10_22_a__m___Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_05_2024_10_22_a_ m__[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Datos/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="agregado clase conexion y alumnosDAO">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/Alumnos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/Alumnos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,7 @@
       <workItem from="1716402082577" duration="604000" />
       <workItem from="1716406540284" duration="598000" />
       <workItem from="1716408781543" duration="927000" />
-      <workItem from="1716735868533" duration="1066000" />
+      <workItem from="1716735868533" duration="1369000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -183,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716402215175</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="agregado clase conexion y alumnosDAO">
+      <option name="closed" value="true" />
+      <created>1716737224362</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716737224362</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +210,7 @@
     <MESSAGE value="Primer Commit" />
     <MESSAGE value="actualizacion del pom" />
     <MESSAGE value="creacion de carpetas" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de carpetas" />
+    <MESSAGE value="agregado clase conexion y alumnosDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregado clase conexion y alumnosDAO" />
   </component>
 </project>
