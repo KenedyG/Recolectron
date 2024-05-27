@@ -5,7 +5,7 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 public class Conexion{
-    private static String user = "PostgreSQL 16";
+    private static String user = "postgres";
     private static String pswd = "123";
     private static String bd = "Recolectron";
     private static String server = "jdbc:postgresql://localhost:5432/" + bd;
