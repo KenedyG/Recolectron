@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Primer version de Login y Estilo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/DonativoJB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroJB.java" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Main y Clase Conexion para la Base de Datos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/AlumnosJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/InventarioJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/AlumnosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/AlumnosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/AlumnosJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/AlumnosJB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Smart Tomcat.Unnamed.executor": "Run",
     "Tomcat Server.Recolectron.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/SOTH/OneDrive/Escritorio/LOTR",
@@ -79,7 +78,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -148,8 +147,9 @@
       <workItem from="1715302659126" duration="5372000" />
       <workItem from="1716828342474" duration="7000" />
       <workItem from="1716840342635" duration="794000" />
-      <workItem from="1716841385229" duration="93000" />
-      <workItem from="1716912999302" duration="1633000" />
+      <workItem from="1716841385229" duration="451000" />
+      <workItem from="1716858860472" duration="164000" />
+      <workItem from="1716859033656" duration="2652000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -231,45 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715303884583</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Main y Clase Conexion para la Base de Datos">
+      <option name="closed" value="true" />
+      <created>1716841709752</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716841709752</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="9c65cd9a-3e9c-44a9-a7d4-73df99920bcf" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="9c65cd9a-3e9c-44a9-a7d4-73df99920bcf">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/Users/kened/IdeaProjects/Inventario Recolectron/src/main/java/Modelo" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -285,7 +263,8 @@
     <MESSAGE value="creacion de carpetas" />
     <MESSAGE value="Testeo de Propiedades de Intellij" />
     <MESSAGE value="Test de Header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test de Header" />
+    <MESSAGE value="Main y Clase Conexion para la Base de Datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main y Clase Conexion para la Base de Datos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
