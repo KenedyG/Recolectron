@@ -30,8 +30,12 @@ public class AlumnosDAO {
                 String materia = result.getString("Materia");
 
             }
-        } catch (SQLException e) {
-         Conexion.close(result);
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Conexion.close(state);
+            Conexion.close(con);
         }
+        return alumnosDAOS;
     }
 }
