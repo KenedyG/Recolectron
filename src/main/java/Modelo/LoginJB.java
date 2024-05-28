@@ -33,5 +33,5 @@ public class LoginJB implements Serializable {
     public void setIduser(int iduser) {
         this.iduser = iduser;
     }
-    
+    /*?*/
 }
