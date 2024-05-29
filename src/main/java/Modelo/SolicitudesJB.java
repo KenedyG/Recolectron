@@ -7,8 +7,8 @@ public class SolicitudesJB implements Serializable {
     private static final long serialVersionUID = 1L;
     private int idSolicitud;
     private int noequipo;
-    private Date fechaSolicitud;
-    private Date fechaUso;
+    private String fechaSolicitud;
+    private String fechaUso;
     private String status;
     private int idalumno;
 
@@ -30,16 +30,16 @@ public class SolicitudesJB implements Serializable {
     public void setNoequipo(int Noequipo) {
         this.noequipo = Noequipo;
     }
-    public Date getFechaSolicitud() {
+    public String getFechaSolicitud() {
         return fechaSolicitud;
     }
-    public void setFechaSolicitud(Date fechaSolicitud) {
+    public void setFechaSolicitud(String fechaSolicitud) {
         this.fechaSolicitud = fechaSolicitud;
     }
-    public Date getFechaUso() {
+    public String getFechaUso() {
         return fechaUso;
     }
-    public void setFechaUso(Date fechaUso) {
+    public void setFechaUso(String fechaUso) {
         this.fechaUso = fechaUso;
     }
     public String getStatus() {
