@@ -4,6 +4,7 @@ import java.sql.*;
 import java.sql.Date;
 import java.util.*;
 import Datos.AlumnosDAO;
+import Modelo.AlumnosJB;
 
 
 public class AlumnosDAO {
@@ -28,8 +29,8 @@ public class AlumnosDAO {
                 int id_aulumno = result.getInt("id_aulumno");
                 String nombre = result.getString("nombre");
                 String materia = result.getString("Materia");
-
             }
+
         }catch (Exception e){
             e.printStackTrace();
         }finally {
@@ -37,5 +38,43 @@ public class AlumnosDAO {
             Conexion.close(con);
         }
         return alumnosDAOS;
+    }
+    public void agregarAlumnos (AlumnosJB Alumnos) {
+        Connection con = null;
+        PreparedStatement state = null;
+        try {
+            con = Conexion.getConnection();
+            state = con.prepareStatement(insertSQL);
+
+            state.setInt(1,Alumnos.getIdalumno());
+            state.setString(2,Alumnos.getNombre());
+            state.setString(2,Alumnos.getMateria());
+            state.executeUpdate();
+        } catch (SQLException e) {
+        } finally {
+                Conexion.close(state);
+                Conexion.close(con);
+        }
+    }
+    public int ModificarAlumnos (AlumnosJB Alumnos) {
+        Connection con = null;
+        PreparedStatement state = null;
+        int registro=0;
+
+        try {
+            con = Conexion.getConnection();
+            state = con.prepareStatement(updateSQL);
+
+            state.setInt(1,Alumnos.getIdalumno());
+            state.setString(2,Alumnos.getMateria());
+            state.setString(2,Alumnos.getMateria());
+
+            registro = state.executeUpdate();
+            if(registro>0){System.out.println("Tu registro a sido actualizado");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return registro;
     }
 }
