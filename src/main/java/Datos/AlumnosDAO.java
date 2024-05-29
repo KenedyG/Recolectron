@@ -9,10 +9,10 @@ import Modelo.AlumnosJB;
 
 public class AlumnosDAO {
 
-    private static final String selectSQL = "SELECT * FROM alumnos WHERE idAlumno = ?, nombre = ?, materia = ?";
+    private static final String selectSQL = "SELECT * FROM alumnos WHERE id_alumno = ?, nombre = ?, materia = ?";
     private static final String insertSQL = "INSERT INTO alumnos (nombre,materia) VALUES (?,?)";
     private static final String updateSQL = "UPDATE alumnos SET nombre = ?, materia = ? WHERE id_alumno";
-    private static final String deleteSQL = "DELETE FROM Alumnos WHERE id_alumnos  = ? ";
+    private static final String deleteSQL = "DELETE FROM alumnos WHERE id_alumno  = ? ";
 
     public List<AlumnosDAO> listar() {
         Connection con = null;
