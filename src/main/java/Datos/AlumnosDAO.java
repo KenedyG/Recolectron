@@ -26,7 +26,7 @@ public class AlumnosDAO {
             state = con.prepareStatement("SELECT * FROM Alumnos");
             result = state.executeQuery();
             while (result.next()) {
-                int id_aulumno = result.getInt("id_aulumno");
+                int id_alumno = result.getInt("id_alumno");
                 String nombre = result.getString("nombre");
                 String materia = result.getString("Materia");
             }
@@ -70,7 +70,7 @@ public class AlumnosDAO {
             state.setString(2,Alumnos.getMateria());
 
             registro = state.executeUpdate();
-            if(registro>0){System.out.println("Tu registro a sido actualizado");
+            if(registro>0){System.out.println("Tu registro ha sido actualizado");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
