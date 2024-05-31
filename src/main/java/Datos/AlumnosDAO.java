@@ -1,15 +1,15 @@
 package Datos;
 
 import java.sql.*;
-import java.sql.Date;
 import java.util.*;
-import Datos.AlumnosDAO;
+
 import Modelo.AlumnosJB;
+
+import javax.swing.plaf.nimbus.State;
 
 
 public class AlumnosDAO {
 
-    private static final String selectSQL = "SELECT * FROM alumnos WHERE id_alumno = ?, nombre = ?, materia = ?";
     private static final String insertSQL = "INSERT INTO alumnos (nombre,materia) VALUES (?,?)";
     private static final String updateSQL = "UPDATE alumnos SET nombre = ?, materia = ? WHERE id_alumno";
     private static final String deleteSQL = "DELETE FROM alumnos WHERE id_alumno  = ? ";
@@ -31,7 +31,7 @@ public class AlumnosDAO {
                 String materia = result.getString("Materia");
             }
 
-        }catch (Exception e){
+            }catch (Exception e){
             e.printStackTrace();
         }finally {
             Conexion.close(state);
@@ -39,7 +39,7 @@ public class AlumnosDAO {
         }
         return alumnosDAOS;
     }
-    public void agregarAlumnos (AlumnosJB Alumnos) {
+    public void AgregarAlumnos (AlumnosJB Alumnos) {
         Connection con = null;
         PreparedStatement state = null;
         try {
@@ -67,7 +67,6 @@ public class AlumnosDAO {
 
             state.setInt(1,Alumnos.getIdalumno());
             state.setString(2,Alumnos.getMateria());
-            state.setString(2,Alumnos.getMateria());
 
             registro = state.executeUpdate();
             if(registro>0){System.out.println("Tu registro ha sido actualizado");
@@ -77,4 +76,24 @@ public class AlumnosDAO {
         }
         return registro;
     }
+    public void EliminarAlumno(AlumnosJB Alumnos){
+        Connection con =null;
+        PreparedStatement state =null;
+        try{
+            con = Conexion.getConnection();
+            state = con.prepareStatement(deleteSQL);
+
+            state.setInt(1,Alumnos.getIdalumno());
+            state.executeUpdate();
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }finally{
+            Conexion.close(state);
+            Conexion.close(con);
+
+        }
+    }
+
+
 }
