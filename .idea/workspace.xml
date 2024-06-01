@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="RegistroDAO completo y fix del JB de Registro, no tenía constructor completo.">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Arreglo de Sintaxis en Funciones de SolicitudesDAO">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +154,9 @@
       <workItem from="1716913006352" duration="1473000" />
       <workItem from="1716915198590" duration="237000" />
       <workItem from="1716915448003" duration="1013000" />
+      <workItem from="1717263778830" duration="184000" />
+      <workItem from="1717263979416" duration="1280000" />
+      <workItem from="1717265291051" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -304,7 +310,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717030177994</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Arreglo de Sintaxis en Funciones de SolicitudesDAO">
+      <option name="closed" value="true" />
+      <created>1717262011584</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717262011584</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +348,8 @@
     <MESSAGE value="RegistroDAO y arreglos de sintaxis en AlumnosDAO, recuerda que tiene que ser iguales que los campos de la BD" />
     <MESSAGE value="Arreglo de Sintaxis de AlumnosDAO 2" />
     <MESSAGE value="RegistroDAO completo y fix del JB de Registro, no tenía constructor completo." />
-    <option name="LAST_COMMIT_MESSAGE" value="RegistroDAO completo y fix del JB de Registro, no tenía constructor completo." />
+    <MESSAGE value="Arreglo de Sintaxis en Funciones de SolicitudesDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de Sintaxis en Funciones de SolicitudesDAO" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

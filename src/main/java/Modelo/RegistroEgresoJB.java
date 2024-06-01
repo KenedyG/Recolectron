@@ -1,6 +1,8 @@
 package Modelo;
 
 import java.io.*;
+import java.sql.Timestamp;
+import java.sql.Date;
 
 public class RegistroEgresoJB implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -10,13 +12,13 @@ public class RegistroEgresoJB implements Serializable {
     private String materia;
     private String nivelacademico;
     private String donativo;
-    private String fecha;
+    private Date fecha;
     private int idelectronico;
 
     public RegistroEgresoJB() {
 
     }
-    public RegistroEgresoJB(int idelectronico, String nombre, String matricula, String materia, String nivelacademico, String donativo, String fecha, int idRegistroEgreso){
+    public RegistroEgresoJB(int idRegistroEgreso, String nombre, String matricula, String materia, String nivelacademico, String donativo, Date fecha, int idelectronico){
 
     }
     public int getIdRegistroEgreso() {
@@ -55,10 +57,10 @@ public class RegistroEgresoJB implements Serializable {
     public void setDonativo(String donativo) {
         this.donativo = donativo;
     }
-    public String getFecha() {
+    public Date getFecha() {
         return fecha;
     }
-    public void setFecha(String fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
     public int getIdelectronico() {

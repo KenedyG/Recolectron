@@ -53,8 +53,8 @@ public class SolucitudesDAO {
 
          state.setInt(1,solicitudes.getIdSolicitud());
          state.setInt(2,solicitudes.getNoequipo());
-         state.setTimestamp(3,solicitudes.getFechaSolicitud());
-         state.setTimestamp(4,solicitudes.getFechaUso());
+         state.setDate(3,solicitudes.getFechaSolicitud());
+         state.setDate(4,solicitudes.getFechaUso());
          state.setString(5,solicitudes.getStatus());
 
          state.executeUpdate();
@@ -77,7 +77,7 @@ public class SolucitudesDAO {
 
             state.setInt(1,solicitudes.getIdSolicitud());
             state.setInt(2,solicitudes.getNoequipo());
-            state.setTimestamp(3,solicitudes.getFechaSolicitud());
+            state.setDate(3,(solicitudes.getFechaSolicitud()));
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

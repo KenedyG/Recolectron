@@ -1,15 +1,14 @@
 package Modelo;
 
 import java.io.*;
-import java.sql.Timestamp;
-import java.util.Date;
+import java.sql.Date;
 
 public class SolicitudesJB implements Serializable {
     private static final long serialVersionUID = 1L;
     private int idSolicitud;
     private int noequipo;
-    private String fechaSolicitud;
-    private String fechaUso;
+    private Date fechaSolicitud;
+    private Date fechaUso;
     private String status;
     private int idalumno;
 
@@ -31,18 +30,18 @@ public class SolicitudesJB implements Serializable {
     public void setNoequipo(int Noequipo) {
         this.noequipo = Noequipo;
     }
-    public Timestamp getFechaSolicitud() {
+    public Date getFechaSolicitud() {
         return fechaSolicitud;
     }
-    public void setFechaSolicitud(String fechaSolicitud) {
+    public void setFechaSolicitud(Date fechaSolicitud) {
         this.fechaSolicitud = fechaSolicitud;
     }
-    public Timestamp getFechaUso() {
+    public Date getFechaUso() {
         return fechaUso;
     }
-    public String setFechaUso(String fechaUso) {
+    public Date setFechaUso(Date fechaUso) {
         this.fechaUso = fechaUso;
-        return  fechaUso;
+        return fechaUso;
     }
     public String getStatus() {
         return status;
