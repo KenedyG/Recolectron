@@ -14,6 +14,7 @@ public class RegistroEDAO {
     private static final String insertSQL = "INSERT INTO registro_egreso (idRegistroEgreso,Nombre,Matricula,Materia,nivelacademico,donativo,fecha,idelectronico) VALUES (?,?,?,?,?,?,?,?)";
     private static final String updateSQL = "UPDATE registro_egreso SET idRegistroEgreso = ?, Nombre = ?, Matricula  = ?, Materia = ?, nivelacademico = ?, donativo = ?, fecha = ?, idelectronico = ?";
 
+
     public List<RegistroEgresoJB> listar(){
         Connection con = null;
         PreparedStatement state = null;
@@ -91,4 +92,5 @@ public class RegistroEDAO {
             e.printStackTrace();
         }
     }
+
 }
