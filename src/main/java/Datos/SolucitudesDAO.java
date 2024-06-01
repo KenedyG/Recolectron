@@ -66,7 +66,7 @@ public class SolucitudesDAO {
          Conexion.close(con);
      }
      }
-    public int modificar (SolicitudesJB solicitudes){
+    public int modificarSolicitud (SolicitudesJB solicitudes){
         Connection con = null;
         PreparedStatement state = null;
         int registros = 0;
@@ -84,7 +84,7 @@ public class SolucitudesDAO {
 
         return registros;
     }
-    public void eliminar(SolicitudesJB solicitudes){
+    public void eliminarSolicitud(SolicitudesJB solicitudes){
         Connection con = null;
         PreparedStatement state = null;
         try {
