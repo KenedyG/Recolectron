@@ -9,6 +9,9 @@ public class DonativoJB implements Serializable {
     public DonativoJB() {
     }
 
+    public DonativoJB(int idDonativo, String nombre, String nombreObjeto) {
+    }
+
     public String getNombre() {
         return nombre;
     }
