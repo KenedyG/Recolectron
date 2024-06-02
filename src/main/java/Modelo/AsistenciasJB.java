@@ -1,38 +1,33 @@
 package Modelo;
 import java.io.*;
-public class AsistenciasJB implements Serializable{
-    private int id_Asistencia;
-    private String HoraEntrada;
-    private String HorasSalida;
+public class AsistenciasJB implements Serializable {
+    private int id_asistencia;
+    private String horaentrada;
+    private String horasalida;
     private int id_User;
 
-
-    public AsistenciasJB(){
-
+    public int getId_asistencia() {
+        return id_asistencia;
     }
 
-    public int getId_Asistencia() {
-        return id_Asistencia;
+    public void setId_asistencia(int id_asistencia) {
+        this.id_asistencia = id_asistencia;
     }
 
-    public void setId_Asistencia(int id_Asistencia) {
-        this.id_Asistencia = id_Asistencia;
+    public String getHoraentrada() {
+        return horaentrada;
     }
 
-    public String getHoraEntrada() {
-        return HoraEntrada;
+    public void setHoraentrada(String horaentrada) {
+        this.horaentrada = horaentrada;
     }
 
-    public void setHoraEntrada(String horaEntrada) {
-        HoraEntrada = horaEntrada;
+    public String getHorasalida() {
+        return horasalida;
     }
 
-    public String getHorasSalida() {
-        return HorasSalida;
-    }
-
-    public void setHorasSalida(String horasSalida) {
-        HorasSalida = horasSalida;
+    public void setHorasalida(String horasalida) {
+        this.horasalida = horasalida;
     }
 
     public int getId_User() {
