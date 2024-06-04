@@ -18,6 +18,7 @@ public class RegistroJB implements Serializable {
         this.id_user = id_user;
         this.nombre = nombre;
         this.apellidoP = apellidoP;
+        this.apellidoM = apellidoM;
         this.correo = correo;
         this.usuario = usuario;
         this.password = password;
