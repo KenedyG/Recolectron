@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Login JavaBean">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Creacion de SVLogin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,12 +28,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KenedyG/Recolectron.git",
-    "accountId": "8457ca67-66c6-4859-95ca-96bc7aec0000"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KenedyG/Recolectron.git&quot;,
+    &quot;accountId&quot;: &quot;8457ca67-66c6-4859-95ca-96bc7aec0000&quot;
   }
-}]]></component>
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -151,6 +151,7 @@
       <workItem from="1716913006352" duration="1473000" />
       <workItem from="1716915198590" duration="237000" />
       <workItem from="1716915448003" duration="1013000" />
+      <workItem from="1717537364248" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -272,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716915671061</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Creacion de SVLogin">
+      <option name="closed" value="true" />
+      <created>1717525094673</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1717525094673</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +318,8 @@
     <MESSAGE value="Main y Clase Conexion para la Base de Datos" />
     <MESSAGE value="JavaBeans para las tablas Solicitudes, Inventario y Alumnos" />
     <MESSAGE value="Login JavaBean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login JavaBean" />
+    <MESSAGE value="Creacion de SVLogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de SVLogin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
