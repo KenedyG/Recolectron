@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Creacion de SVLogin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Comienzo de paquete de Controladores, Servlet de Registro completo, fixeo de falta de datos en el coonstuctor de RegistroJB">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/IndexStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/LoginStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JS/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/PswdRecovery.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_04_22_p__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_04_22_p_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,8 @@
       <list>
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -31,7 +41,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/KenedyG/Recolectron.git&quot;,
-    &quot;accountId&quot;: &quot;8457ca67-66c6-4859-95ca-96bc7aec0000&quot;
+    &quot;accountId&quot;: &quot;32be2532-4c22-4c7a-bd72-ceaec8c4ef8f&quot;
   }
 }</component>
   <component name="LogFilters">
@@ -63,10 +73,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.Recolectron.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SOTH/OneDrive/Escritorio/LOTR&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SOTH/OneDrive/Escritorio/Idea Workspace/src/main/webapp/CSS&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -76,11 +86,21 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp\CSS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp\JS" />
+      <recent name="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp\CSS" />
+      <recent name="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Smart Tomcat.Unnamed">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Datos.Main" />
       <module name="InventarioRecolectron" />
@@ -151,7 +171,13 @@
       <workItem from="1716913006352" duration="1473000" />
       <workItem from="1716915198590" duration="237000" />
       <workItem from="1716915448003" duration="1013000" />
-      <workItem from="1717537364248" duration="808000" />
+      <workItem from="1717263778830" duration="184000" />
+      <workItem from="1717263979416" duration="1280000" />
+      <workItem from="1717265291051" duration="2282000" />
+      <workItem from="1717267609302" duration="3193000" />
+      <workItem from="1717276072047" duration="148000" />
+      <workItem from="1717791109363" duration="4301000" />
+      <workItem from="1717864301858" duration="5047000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -273,33 +299,79 @@
       <option name="project" value="LOCAL" />
       <updated>1716915671061</updated>
     </task>
-    <task id="LOCAL-00016" summary="Creacion de SVLogin">
+    <task id="LOCAL-00016" summary="RegistroDAO y arreglos de sintaxis en AlumnosDAO, recuerda que tiene que ser iguales que los campos de la BD">
       <option name="closed" value="true" />
-      <created>1717525094673</created>
+      <created>1717023166100</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1717525094673</updated>
+      <updated>1717023166100</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Arreglo de Sintaxis de AlumnosDAO 2">
+      <option name="closed" value="true" />
+      <created>1717023282973</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717023282973</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Arreglo de Sintaxis de AlumnosDAO 2">
+      <option name="closed" value="true" />
+      <created>1717030131962</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717030131962</updated>
+    </task>
+    <task id="LOCAL-00019" summary="RegistroDAO completo y fix del JB de Registro, no tenía constructor completo.">
+      <option name="closed" value="true" />
+      <created>1717030177994</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717030177994</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Arreglo de Sintaxis en Funciones de SolicitudesDAO">
+      <option name="closed" value="true" />
+      <created>1717262011584</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717262011584</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Arreglo Critico de manejo del Tipo Date en los DAO, y JB de SolicitudesJB y RegistroEgreso, se pueden manejar como date directamente usando sql date no util date **Importante**">
+      <option name="closed" value="true" />
+      <created>1717266509007</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717266509007</updated>
+    </task>
+    <task id="LOCAL-00022" summary="RegistroEgresoDAO completo :D">
+      <option name="closed" value="true" />
+      <created>1717266792953</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1717266792953</updated>
+    </task>
+    <task id="LOCAL-00023" summary="LoginDAO completo :D alguien apague el sol me estoy derritiendo">
+      <option name="closed" value="true" />
+      <created>1717268341548</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1717268341548</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="9c65cd9a-3e9c-44a9-a7d4-73df99920bcf" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="9c65cd9a-3e9c-44a9-a7d4-73df99920bcf">
-          <value>
-            <State />
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -318,8 +390,14 @@
     <MESSAGE value="Main y Clase Conexion para la Base de Datos" />
     <MESSAGE value="JavaBeans para las tablas Solicitudes, Inventario y Alumnos" />
     <MESSAGE value="Login JavaBean" />
-    <MESSAGE value="Creacion de SVLogin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de SVLogin" />
+    <MESSAGE value="RegistroDAO y arreglos de sintaxis en AlumnosDAO, recuerda que tiene que ser iguales que los campos de la BD" />
+    <MESSAGE value="Arreglo de Sintaxis de AlumnosDAO 2" />
+    <MESSAGE value="RegistroDAO completo y fix del JB de Registro, no tenía constructor completo." />
+    <MESSAGE value="Arreglo de Sintaxis en Funciones de SolicitudesDAO" />
+    <MESSAGE value="Arreglo Critico de manejo del Tipo Date en los DAO, y JB de SolicitudesJB y RegistroEgreso, se pueden manejar como date directamente usando sql date no util date **Importante**" />
+    <MESSAGE value="RegistroEgresoDAO completo :D" />
+    <MESSAGE value="LoginDAO completo :D alguien apague el sol me estoy derritiendo" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginDAO completo :D alguien apague el sol me estoy derritiendo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
