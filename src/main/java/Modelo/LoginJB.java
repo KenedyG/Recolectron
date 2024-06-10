@@ -12,7 +12,7 @@ public class LoginJB implements Serializable {
 
     }
 
-    public LoginJB(String usuario, String password, int iduser){
+    public LoginJB(String usuario, String password){
 
     }
     public String getUsuario (){

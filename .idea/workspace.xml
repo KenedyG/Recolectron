@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Datos/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/LoginDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/LoginJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/LoginJB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,7 @@
       <workItem from="1717970944669" duration="8795000" />
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
-      <workItem from="1718038342271" duration="3819000" />
+      <workItem from="1718038342271" duration="4043000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -400,7 +399,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717978361928</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles">
+      <option name="closed" value="true" />
+      <created>1718042200051</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718042200051</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB">
+      <option name="closed" value="true" />
+      <created>1718042275698</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718042275698</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +451,8 @@
     <MESSAGE value="LoginDAO completo :D alguien apague el sol me estoy derritiendo" />
     <MESSAGE value="Inicio de la Etapa de Front-End, index completado, falta diseñar bien los demas jsp, login y registro completado" />
     <MESSAGE value="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles" />
+    <MESSAGE value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

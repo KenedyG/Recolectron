@@ -29,9 +29,7 @@ public class LoginDAO {
             while(result.next()) {
                 String usuario = result.getString("usuario");
                 String password = result.getString("password");
-                int id_user = result.getInt("id_user");
-
-                LoginJB loginJB = new LoginJB(usuario, password, id_user);
+                LoginJB loginJB = new LoginJB(usuario, password);
                 login.add(loginJB);
             }
         }catch (Exception e) {
