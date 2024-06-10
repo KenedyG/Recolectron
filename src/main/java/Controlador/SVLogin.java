@@ -20,7 +20,7 @@ public class SVLogin extends HttpServlet {
     public void init() { loginDAO = new LoginDAO (); };
 
 
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+                public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String user = request.getParameter("usuario");
         String pass = request.getParameter("password");
