@@ -9,22 +9,22 @@
 
 <div class="container" id="container">
     <div class="form-container sign-up">
-        <form action="../SVRegistro" method="post">
+        <form action="<%= request.getContextPath()%>/SVRegistro" method="post">
             <h1>Registrarse</h1>
-            <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
-            <input type="text" name="Apellido Paterno" id="apellidoP" placeholder="Apellido Paterno">
-            <input type="text" name="Apellido Materno" id="apellidoM" placeholder="Apellido Materno">
-            <input type="email" name="Correo" id="correo" placeholder="Correo">
-            <input type="text" name="Usuario" id="usuario" placeholder="Usuario">
-            <input type="password" name="Contraseña" id="pswd1" placeholder="Contraseña">
+            <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
+            <input type="text" name="Apellido Paterno" id="apellidoP" placeholder="Apellido Paterno" required>
+            <input type="text" name="Apellido Materno" id="apellidoM" placeholder="Apellido Materno" required>
+            <input type="email" name="Correo" id="correo" placeholder="Correo" required>
+            <input type="text" name="Usuario" id="usuario" placeholder="Usuario" required>
+            <input type="password" name="Contraseña" id="pswd1" placeholder="Contraseña"required>
             <input type="submit" value="Registrarse">
         </form>
     </div>
     <div class="form-container sign-in">
-        <form action="SVLogin" method="post" class="form-sign-in">
+        <form action="<%= request.getContextPath()%>/SVLogin" method="post" class="form-sign-in">
             <h1>Inicio de Sesión</h1>
-            <input type="text" name="Usuario" id="usuario2" placeholder="Usuario">
-            <input type="password" name="Contraseña" id="pswd2" placeholder="Contraseña">
+            <input type="text" name="Usuario" id="usuario2" placeholder="Usuario" required>
+            <input type="password" name="Contraseña" id="pswd2" placeholder="Contraseña" required>
             <input type="submit" value="Iniciar Sesión">
         </form>
     </div>

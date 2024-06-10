@@ -11,8 +11,8 @@ import java.util.List;
 
 public class LoginDAO {
     private static final String selectSQL = "SELECT * FROM login";
-    private static final String insertSQL = "INSERT INTO login (usuario,password,id_user) VALUES (?,?,?)";
-    private static final String updateSQL = "UPDATE login SET usuario = ?, password = ?, id_user = ?";
+    private static final String insertSQL = "INSERT INTO login (usuario,password) VALUES (?,?)";
+    private static final String updateSQL = "UPDATE login SET usuario = ?, password = ?";
     private static final String deleteSQL = "DELETE FROM login WHERE  id_user = ?";
 
     public List<LoginJB> login() {
@@ -52,7 +52,6 @@ public class LoginDAO {
             state = con.prepareStatement(insertSQL);
             state.setString(1, login.getUsuario());
             state.setString(2, login.getPassword());
-            state.setInt(3,login.getIduser());
             state.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
@@ -95,9 +94,23 @@ public class LoginDAO {
             Conexion.close(con);
         }
     }
-    /**/
+    /*Metodo para iniciar sesion, fase de prueba*/
     public boolean validar(LoginJB loginJB) {
-
+        Connection con = null;
+        PreparedStatement state = null;
+        ResultSet rs = null;
+        boolean existe = false;
+        try {
+            con = Conexion.getConnection();
+            state = con.prepareStatement("SELECT * FROM login WHERE usuario = ? and password = ?");
+            state.setString(1,loginJB.getUsuario());
+            state.setString(2,loginJB.getPassword());
+            rs = state.executeQuery();
+            existe = rs.next();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return existe;
     }
 
 }
