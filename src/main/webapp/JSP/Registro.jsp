@@ -17,16 +17,15 @@
             <input type="email" name="Correo" id="correo" placeholder="Correo">
             <input type="text" name="Usuario" id="usuario" placeholder="Usuario">
             <input type="password" name="Contraseña" id="pswd1" placeholder="Contraseña">
-            <button>Registrarse</button>
+            <input type="submit" value="Registrarse">
         </form>
     </div>
     <div class="form-container sign-in">
-        <form action="../SVLogin" method="post">
+        <form action="SVLogin" method="post" class="form-sign-in">
             <h1>Inicio de Sesión</h1>
-            <input type="email" name="Correo" id="correo2" placeholder="Correo">
+            <input type="text" name="Usuario" id="usuario2" placeholder="Usuario">
             <input type="password" name="Contraseña" id="pswd2" placeholder="Contraseña">
-            <a href="../JSP/PswdRecovery.jsp">¿Olvidaste tu Contraseña?</a>
-            <button>Iniciar Sesión</button>
+            <input type="submit" value="Iniciar Sesión">
         </form>
     </div>
     <div class="toggle-container">

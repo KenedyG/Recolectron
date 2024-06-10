@@ -18,7 +18,7 @@ public class LoginJB implements Serializable {
     public String getUsuario (){
         return usuario;
     }
-    public void setUsuario(){
+    public void setUsuario(String usuario){
         this.usuario = usuario;
     }
     public String getPassword() {

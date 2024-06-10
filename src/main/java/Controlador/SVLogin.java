@@ -22,11 +22,13 @@ public class SVLogin extends HttpServlet {
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String user = request.getParameter("Usuario");
+        String user = request.getParameter("usuario");
         String pass = request.getParameter("password");
+        loginJB.setIduser(0);
+        loginJB.setUsuario(user);
+        loginJB.setPassword(pass);
         try {
-            loginJB = new LoginJB(user,pass,0);
-            loginDAO.agregarUsuario(loginJB);
+            
         } catch (Exception e){
             e.printStackTrace();
         }

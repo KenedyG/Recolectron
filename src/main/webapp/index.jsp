@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Inicio</title>
+    <link rel="icon" href="IMG/Reco_Logo_Min.png" type="image/x-icon">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/IndexStyle.css">
 </head>
@@ -9,7 +10,7 @@
     <nav>
         <div class ="logo">RECOLECTRÓN</div>
         <div class="nav-items">
-            <a href="index.jsp">INICIO</a> <a href="JSP/Inventario.jsp">INVENTARIO</a> <a href="JSP/Registro.jsp">LOGIN <a href="JSP/Solicitudes.jsp">SOLICITAR HORARIO</a>
+            <a href="index.jsp">INICIO</a> <a href="JSP/Inventario.jsp">INVENTARIO</a> <a href="JSP/Registro.jsp">LOGIN</a> <a href="JSP/Solicitudes.jsp">SOLICITAR HORARIO</a>
         </div>
     </nav>
     <section class="content">

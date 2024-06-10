@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Comienzo de paquete de Controladores, Servlet de Registro completo, fixeo de falta de datos en el coonstuctor de RegistroJB">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/IndexStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/CSS/LoginStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JS/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/PswdRecovery.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_04_22_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_04_22_p_ m__[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Inicio de la Etapa de Front-End, index completado, falta diseñar bien los demas jsp, login y registro completado">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2024_11_11_a__m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_06_2024_11_11_a_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/LoginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/LoginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/LoginJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/LoginJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/LoginStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/PswdRecovery.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +29,8 @@
       <list>
         <option value="CSS File" />
         <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -177,7 +180,10 @@
       <workItem from="1717267609302" duration="3193000" />
       <workItem from="1717276072047" duration="148000" />
       <workItem from="1717791109363" duration="4301000" />
-      <workItem from="1717864301858" duration="5047000" />
+      <workItem from="1717864301858" duration="5266000" />
+      <workItem from="1717878849362" duration="3261000" />
+      <workItem from="1717959662684" duration="1841000" />
+      <workItem from="1717970944669" duration="6610000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -363,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717268341548</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Inicio de la Etapa de Front-End, index completado, falta diseñar bien los demas jsp, login y registro completado">
+      <option name="closed" value="true" />
+      <created>1717869515993</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717869515993</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +411,8 @@
     <MESSAGE value="Arreglo Critico de manejo del Tipo Date en los DAO, y JB de SolicitudesJB y RegistroEgreso, se pueden manejar como date directamente usando sql date no util date **Importante**" />
     <MESSAGE value="RegistroEgresoDAO completo :D" />
     <MESSAGE value="LoginDAO completo :D alguien apague el sol me estoy derritiendo" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginDAO completo :D alguien apague el sol me estoy derritiendo" />
+    <MESSAGE value="Inicio de la Etapa de Front-End, index completado, falta diseñar bien los demas jsp, login y registro completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio de la Etapa de Front-End, index completado, falta diseñar bien los demas jsp, login y registro completado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

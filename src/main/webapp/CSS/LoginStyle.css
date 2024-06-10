@@ -4,6 +4,29 @@
     box-sizing: border-box;
     font-family: 'Satoshi', sans-serif;
 }
+nav {
+    height: 80px;
+    background: #587ea1;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc((100vw - 1300px)/2);
+}
+
+.logo {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+}
 
 body{
     background-color: #c9d6ff;

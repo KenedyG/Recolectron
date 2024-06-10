@@ -95,5 +95,9 @@ public class LoginDAO {
             Conexion.close(con);
         }
     }
+    /**/
+    public boolean validar(LoginJB loginJB) {
+
+    }
 
 }
