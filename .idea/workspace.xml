@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Arreglados la logica de Login falta implementacion del fixeo de la BD, Login Teorico funcionando.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,31 +59,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Recolectron.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SOTH/OneDrive/Escritorio/Idea Workspace/src/main/webapp/CSS&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Smart Tomcat.Unnamed.executor": "Run",
+    "Tomcat Server.Recolectron.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kened/IdeaProjects/Inventario Recolectron/src/main/webapp",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp\CSS" />
@@ -119,14 +114,17 @@
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="C:\Users\SOTH\.SmartTomcat\Idea Workspace\InventarioRecolectron" />
+      <option name="catalinaBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron" />
       <option name="contextPath" value="/InventarioRecolectron" />
-      <option name="docBase" value="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp" />
+      <option name="docBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron\src\main\webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.89" />
-          <option name="path" value="$PROJECT_DIR$/../../../../../Program Files (x86)/Apache Software Foundation/apache-tomcat-9.0.89" />
+          <option name="path" value="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/apache-tomcat-9.0.89" />
           <option name="version" value="9.0.89.0" />
         </TomcatInfo>
       </option>
@@ -204,8 +202,6 @@
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
       <workItem from="1718038342271" duration="4043000" />
-      <workItem from="1718087862488" duration="192000" />
-      <workItem from="1718123310796" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -431,15 +427,7 @@
       <option name="project" value="LOCAL" />
       <updated>1718067225426</updated>
     </task>
-    <task id="LOCAL-00029" summary="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
-      <option name="closed" value="true" />
-      <created>1718088047511</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1718088047511</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +465,7 @@
     <MESSAGE value="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles" />
     <MESSAGE value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
     <MESSAGE value="Cambios en los JB y constructos" />
-    <MESSAGE value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en los JB y constructos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

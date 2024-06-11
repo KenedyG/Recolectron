@@ -25,7 +25,5 @@ public class SVVERInventario  extends HttpServlet{
         List<InventarioJB> inventarioDAOList = inventarioDAO1.listar();
         request.setAttribute("Inventario",inventarioDAO1);
         request.getRequestDispatcher("./JSP/Inventario.JSP").forward(request,response);
-
     }
-
 }

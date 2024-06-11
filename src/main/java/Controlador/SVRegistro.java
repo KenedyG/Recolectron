@@ -33,6 +33,8 @@ public class SVRegistro extends HttpServlet {
             registroDAO.agregarRegistro(registroJB);
         } catch (Exception e){
             e.printStackTrace();
+            request.setAttribute("msj","Error!");
+            request.getRequestDispatcher("error.jsp").forward(request,response);
         }
     }
 }
