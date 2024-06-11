@@ -7,7 +7,7 @@ import java.util.List;
 
 
 public class SolucitudesDAO {
-    public static final String insertSQL = "INSERT INTO Solicitudes(id_solicitud ,noequipo,fecha_solicitud,fecha_uso,status) VALUES (?,?,?,?,?)";
+    public static final String insertSQL = "INSERT INTO Solicitudes(noequipo,fecha_solicitud,fecha_uso,status) VALUES (?,?,?,?,?)";
     public static final String updateSQL = "UPDATE Solicitudes SET fecha_solicitud=?,fecha_usolicitud=? WHERE id_solicitud=? ";
     public static final String deleteSQL = "DELETE FROM Solicitudes WHERE id_solicitud =?";
 
@@ -21,7 +21,6 @@ public class SolucitudesDAO {
      List<SolicitudesJB> solicitudes = new ArrayList<>();
    try {
       con = Conexion.getConnection();
-     state = con.prepareStatement("SELECT * FROM solicitudes ORDER BY id_solicitud  ASC;");
      Result = state.executeQuery();
      while (Result.next()) {
          int id_solicitudes = Result.getInt("id_solicitud");
@@ -31,7 +30,7 @@ public class SolucitudesDAO {
          String status = Result.getString("status");
          int id_alumno = Result.getInt("id_alumno ");
 
-         SolicitudesJB Solicitudes = new SolicitudesJB(id_solicitudes, noequipo, fecha_solicitud, fecha_uso, status, id_solicitudes);
+         SolicitudesJB Solicitudes = new SolicitudesJB( noequipo, fecha_solicitud, fecha_uso, status, id_solicitudes);
          solicitudes.add(Solicitudes);
      }
    }catch (Exception e) {
@@ -51,11 +50,10 @@ public class SolucitudesDAO {
          con = Conexion.getConnection();
          state = con.prepareStatement(insertSQL);
 
-         state.setInt(1,solicitudes.getIdSolicitud());
-         state.setInt(2,solicitudes.getNoequipo());
-         state.setDate(3,solicitudes.getFechaSolicitud());
-         state.setDate(4,solicitudes.getFechaUso());
-         state.setString(5,solicitudes.getStatus());
+         state.setInt(1,solicitudes.getNoequipo());
+         state.setDate(2,solicitudes.getFechaSolicitud());
+         state.setDate(3,solicitudes.getFechaUso());
+         state.setString(4,solicitudes.getStatus());
 
          state.executeUpdate();
      } catch (SQLException e) {
@@ -75,7 +73,6 @@ public class SolucitudesDAO {
             con = Conexion.getConnection();
             state = con.prepareStatement(updateSQL);
 
-            state.setInt(1,solicitudes.getIdSolicitud());
             state.setInt(2,solicitudes.getNoequipo());
             state.setDate(3,(solicitudes.getFechaSolicitud()));
         } catch (SQLException e) {

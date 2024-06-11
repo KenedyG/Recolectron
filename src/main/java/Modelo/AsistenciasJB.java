@@ -6,6 +6,8 @@ public class AsistenciasJB implements Serializable {
     private String horasalida;
     private int id_User;
 
+    public AsistenciasJB(){};
+
     public int getId_asistencia() {
         return id_asistencia;
     }
@@ -22,19 +24,19 @@ public class AsistenciasJB implements Serializable {
         this.horaentrada = horaentrada;
     }
 
-    public String getHorasalida() {
-        return horasalida;
-    }
-
-    public void setHorasalida(String horasalida) {
-        this.horasalida = horasalida;
-    }
-
     public int getId_User() {
         return id_User;
     }
 
     public void setId_User(int id_User) {
         this.id_User = id_User;
+    }
+
+    public String getHorasalida() {
+        return horasalida;
+    }
+
+    public void setHorasalida(String horasalida) {
+        this.horasalida = horasalida;
     }
 }

@@ -18,9 +18,6 @@ public class RegistroEgresoJB implements Serializable {
     public RegistroEgresoJB() {
 
     }
-    public RegistroEgresoJB(int idRegistroEgreso, String nombre, String matricula, String materia, String nivelacademico, String donativo, Date fecha, int idelectronico){
-
-    }
     public int getIdRegistroEgreso() {
         return idRegistroEgreso;
     }

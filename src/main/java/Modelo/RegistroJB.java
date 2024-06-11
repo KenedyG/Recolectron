@@ -14,16 +14,6 @@ public class RegistroJB implements Serializable {
 
     }
 
-    public RegistroJB(int id_user, String nombre, String apellidoP, String apellidoM, String correo, String usuario, String password) {
-        this.id_user = id_user;
-        this.nombre = nombre;
-        this.apellidoP = apellidoP;
-        this.apellidoM = apellidoM;
-        this.correo = correo;
-        this.usuario = usuario;
-        this.password = password;
-    }
-
     public int getId_user() {
         return id_user;
     }

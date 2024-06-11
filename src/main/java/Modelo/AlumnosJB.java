@@ -12,10 +12,6 @@ public class AlumnosJB implements Serializable {
     public AlumnosJB(){
 
     }
-
-    public AlumnosJB(int idalumno, String nombre, String materia) {
-        /*Constructor Completo*/
-    }
     public int getIdalumno() {
         return idalumno;
     }

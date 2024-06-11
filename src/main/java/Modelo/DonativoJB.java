@@ -6,11 +6,11 @@ public class DonativoJB implements Serializable {
     private String nombre;
     private String nombreobjeto;
 
-    public DonativoJB() {
+    public DonativoJB() {}
+
+    public DonativoJB(String nombre, String nombreObjeto) {
     }
 
-    public DonativoJB(int idDonativo, String nombre, String nombreObjeto) {
-    }
 
     public String getNombre() {
         return nombre;

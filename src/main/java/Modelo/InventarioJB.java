@@ -13,12 +13,7 @@ public class InventarioJB implements Serializable {
     private String status;
     private int stock;
 
-    public InventarioJB() {
-
-    }
-    public InventarioJB(int idelectronico, String nombre, String fabricante, String modelo, String especificaciones, String peso, String status, int stock){
-
-    }
+    public InventarioJB() {}
 
     public int getIdelectronico() {
         return idelectronico;

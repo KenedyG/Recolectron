@@ -24,7 +24,7 @@ public class DonativoDAO {
                 String nombre = result.getString("nombre");
                 String nombreObjeto = result.getString("nombreObjeto");
 
-                DonativoJB donativo = new DonativoJB(id_donativo, nombre, nombreObjeto);
+                DonativoJB donativo = new DonativoJB(nombre, nombreObjeto);
                 donativos.add(donativo);
             }
         } catch (SQLException e) {
