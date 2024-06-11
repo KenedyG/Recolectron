@@ -29,7 +29,7 @@ public class SVRegistro extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
-            registroJB = new RegistroJB(0,nombre,apellidoP,apellidoM,correo,usuario,password);
+            registroJB = new RegistroJB(nombre,apellidoP,apellidoM,correo,usuario,password);
             registroDAO.agregarRegistro(registroJB);
         } catch (Exception e){
             e.printStackTrace();

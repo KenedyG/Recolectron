@@ -14,6 +14,10 @@ public class RegistroJB implements Serializable {
 
     }
 
+    public RegistroJB(String nombre, String apellidoP, String apellidoM, String correo, String usuario, String password){
+
+    }
+
     public int getId_user() {
         return id_user;
     }
