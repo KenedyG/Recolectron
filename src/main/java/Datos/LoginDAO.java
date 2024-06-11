@@ -93,22 +93,54 @@ public class LoginDAO {
         }
     }
     /*Metodo para iniciar sesion, fase de prueba*/
-    public boolean validar(LoginJB loginJB) {
+    public boolean validar(String usuario, String password) {
         Connection con = null;
         PreparedStatement state = null;
-        ResultSet rs = null;
+        ResultSet result = null;
         boolean existe = false;
         try {
             con = Conexion.getConnection();
-            state = con.prepareStatement("SELECT * FROM login WHERE usuario = ? and password = ?");
-            state.setString(1,loginJB.getUsuario());
-            state.setString(2,loginJB.getPassword());
-            rs = state.executeQuery();
-            existe = rs.next();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
+            state = con.prepareStatement("SELECT password FROM login WHERE usuario = ?");
+            state.setString(1, usuario);
+            if(result.next()){
+                String pass = result.getString("password");
+                if(password.equals(pass)){
+                    existe = true;
+                    System.out.println("Contraseña correcta crack :D");
+                }else{
+                    System.out.println("Contraseña incorrecta fiera D:");
+                }
+            }else {
+                System.out.println("Usuario no ha encontrado");
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            Conexion.close(result);
+            Conexion.close(state);
+            Conexion.close(con);
         }
         return existe;
+    }
+
+    public int detector(String usuario) {
+        Connection con = null;
+        PreparedStatement state = null;
+        ResultSet result = null;
+        int status = 0;
+
+        try{
+            con = Conexion.getConnection();
+            state = con.prepareStatement("SELECT status FROM login WHERE usuario = ?");
+            state.setString(1, usuario);
+            result = state.executeQuery();
+            if(result.next()){
+                status = result.getInt("status");
+            }
+        }catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return status;
     }
 
 }

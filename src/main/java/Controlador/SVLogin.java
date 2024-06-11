@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.PrintWriter;
-
+import Datos.Conexion;
 import Datos.LoginDAO;
 import Modelo.LoginJB;
 
 import java.io.IOException;
+import java.sql.Connection;
 
 import static java.lang.System.out;
 
@@ -24,22 +25,33 @@ public class SVLogin extends HttpServlet {
 
     public void init() { loginDAO = new LoginDAO (); };
 
+                public void doPost(HttpServletRequest request, HttpServletResponse response)
+                        throws ServletException, IOException {
+                    String user = request.getParameter("Usuario");
+                    String pass = request.getParameter("Contraseña");
 
-                public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String user = request.getParameter("Usuario");
-        String pass = request.getParameter("Contraseña");
-        loginJB.setUsuario(user);
-        loginJB.setPassword(pass);
-
-            if(loginDAO.validar(loginJB)){
-                RequestDispatcher rd = request.getRequestDispatcher("Vista_Empleado.jsp");
-                rd.forward(request, response);
-            }
-            else{
-                out.print("Error de Usuario o Contraseña, intenta de nuevo");
-                response.sendRedirect("JSP/Registro.jsp");
-            }
-        }
-    }
+                    try  {
+                        int status = loginDAO.detector(user);
+                        boolean existe = loginDAO.validar(user,pass);
+                        HttpSession session = request.getSession();
+                        if (existe) {
+                            switch (status) {
+                                case 0:
+                                    session.setAttribute("usuario", user);
+                                    response.sendRedirect("Vista_Admin.jsp");
+                                    break;
+                                case 1:
+                                    session.setAttribute("usuario", user);
+                                    response.sendRedirect("Vista_Empleado.jsp");
+                                    break;
+                            }
+                        }else{
+                            request.setAttribute("Error","Usuario o Contraseña Incorrectos");
+                            request.getRequestDispatcher("/JSP/Registro.jsp").forward(request, response);
+                        }
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+}
 
