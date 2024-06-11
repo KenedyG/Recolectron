@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Manejo de inventario, modifiacion y eliminacion de Objetos en el Inventario completo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVAlumno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVAlumno2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudes.java" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Creacion de SV de Solicitudes de Horas en el laboratorio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/AlumnosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/AlumnosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/AlumnosJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/AlumnosJB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/ModInventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/ModInventario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +38,6 @@
     &quot;accountId&quot;: &quot;32be2532-4c22-4c7a-bd72-ceaec8c4ef8f&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -80,10 +67,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Smart Tomcat.Unnamed.executor": "Run",
     "Tomcat Server.Recolectron.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/SOTH/OneDrive/Escritorio/Idea Workspace/src/main/webapp/CSS",
+    "last_opened_file_path": "C:/Users/kened/IdeaProjects/Inventario Recolectron/src/main/webapp",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,14 +114,17 @@
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="C:\Users\SOTH\.SmartTomcat\Idea Workspace\InventarioRecolectron" />
+      <option name="catalinaBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron" />
       <option name="contextPath" value="/InventarioRecolectron" />
-      <option name="docBase" value="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp" />
+      <option name="docBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron\src\main\webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.89" />
-          <option name="path" value="$PROJECT_DIR$/../../../../../Program Files (x86)/Apache Software Foundation/apache-tomcat-9.0.89" />
+          <option name="path" value="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/apache-tomcat-9.0.89" />
           <option name="version" value="9.0.89.0" />
         </TomcatInfo>
       </option>
@@ -212,10 +202,6 @@
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
       <workItem from="1718038342271" duration="4043000" />
-      <workItem from="1718087862488" duration="192000" />
-      <workItem from="1718123310796" duration="2979000" />
-      <workItem from="1718170567936" duration="96000" />
-      <workItem from="1718208429660" duration="34972000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -441,47 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718067225426</updated>
     </task>
-    <task id="LOCAL-00029" summary="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
+    <task id="LOCAL-00029" summary="Creacion de SV de Solicitudes de Horas en el laboratorio">
       <option name="closed" value="true" />
-      <created>1718088047511</created>
+      <created>1718136359793</created>
       <option name="number" value="00029" />
       <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
-      <updated>1718088047511</updated>
+      <updated>1718136359793</updated>
     </task>
-    <task id="LOCAL-00030" summary="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro">
-      <option name="closed" value="true" />
-      <created>1718136926768</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1718136926768</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Inventario creado, debugging listo pero falta comprobar la funcionalidad del JSP">
-      <option name="closed" value="true" />
-      <created>1718170657689</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1718170657689</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Manejo de Inventario completado :D">
-      <option name="closed" value="true" />
-      <created>1718213269626</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1718213269626</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Manejo de inventario, modifiacion y eliminacion de Objetos en el Inventario completo">
-      <option name="closed" value="true" />
-      <created>1718222764438</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1718222764438</updated>
-    </task>
-    <option name="localTasksCounter" value="34" />
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,12 +473,8 @@
     <MESSAGE value="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles" />
     <MESSAGE value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
     <MESSAGE value="Cambios en los JB y constructos" />
-    <MESSAGE value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
-    <MESSAGE value="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro" />
-    <MESSAGE value="Inventario creado, debugging listo pero falta comprobar la funcionalidad del JSP" />
-    <MESSAGE value="Manejo de Inventario completado :D" />
-    <MESSAGE value="Manejo de inventario, modifiacion y eliminacion de Objetos en el Inventario completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manejo de inventario, modifiacion y eliminacion de Objetos en el Inventario completo" />
+    <MESSAGE value="Creacion de SV de Solicitudes de Horas en el laboratorio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion de SV de Solicitudes de Horas en el laboratorio" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

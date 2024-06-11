@@ -1,6 +1,6 @@
 package Controlador;
 
-import javax.servlet.RequestDispatcher;
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,21 +14,16 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "SVinventario", value = "/SVInventario")
-public class SVVERInventario extends HttpServlet {
+public class SVVERInventario  extends HttpServlet{
     private static final long serialVersionUID = 1L;
+    private InventarioDAO inventarioDAO = new InventarioDAO();
+    private InventarioJB inventarioJB = new InventarioJB();
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //No funciona con doPost, solo dios sabe porque
-        System.out.println("HOLA");
-        InventarioDAO inventarioDAO = new InventarioDAO();
-        List<InventarioJB> inventario = inventarioDAO.listar();
+    public void doGet(HttpServletRequest request,HttpServletResponse response) throws  ServletException, IOException{
 
-        //Se manda el objeto como atributo con nombre inventario, CONSTA QUE SI RECIBE LA LISTA ENTERA :'D
-        request.setAttribute("inventario", inventario);
-        //Se redirige al JSP, no funcionaba antes porque aputaba al mismo servlet, pido perdon
-        request.getRequestDispatcher("/JSP/Inventario.jsp").forward(request, response);
-        /*Debugging 2 - Ahora es personal
-        System.out.println("Regresando al JSP");
-        */
+       InventarioDAO inventarioDAO1 = new InventarioDAO();
+        List<InventarioJB> inventarioDAOList = inventarioDAO1.listar();
+        request.setAttribute("Inventario",inventarioDAO1);
+        request.getRequestDispatcher("./JSP/Inventario.JSP").forward(request,response);
     }
 }
