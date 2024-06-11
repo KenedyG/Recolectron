@@ -10,7 +10,7 @@
     <nav>
         <div class ="logo">RECOLECTRÓN</div>
         <div class="nav-items">
-            <a href="index.jsp">INICIO</a> <a href="JSP/Inventario.jsp">INVENTARIO</a> <a href="JSP/Registro.jsp">LOGIN</a> <a href="JSP/Solicitudes.jsp">SOLICITAR HORARIO</a>
+            <a href="JSP/Registro.jsp">LOGIN</a>
         </div>
     </nav>
     <section class="content">

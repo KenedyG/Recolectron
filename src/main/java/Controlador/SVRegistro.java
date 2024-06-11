@@ -21,16 +21,23 @@ public class SVRegistro extends HttpServlet {
     public void init(){ registroDAO= new RegistroDAO(); };
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nombre = request.getParameter("nombre");
-        String apellidoP = request.getParameter("apellidoP");
-        String apellidoM = request.getParameter("apellidoM");
-        String correo = request.getParameter("correo");
-        String usuario = request.getParameter("usuario");
-        String password = request.getParameter("password");
-
+        String nombre = request.getParameter("Nombre");
+        String apellidoP = request.getParameter("Apellido Paterno");
+        String apellidoM = request.getParameter("Apellido Materno");
+        String correo = request.getParameter("Correo");
+        String usuario = request.getParameter("Usuario");
+        String password = request.getParameter("Password");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: " + apellidoP);
+        System.out.println("Apellido: " + apellidoM);
+        System.out.println("Correo: " + correo);
+        System.out.println("Usuario recibido: " + usuario);
+        System.out.println("Contraseña recibida: " + password);
         try {
             registroJB = new RegistroJB(nombre,apellidoP,apellidoM,correo,usuario,password);
             registroDAO.agregarRegistro(registroJB);
+            System.out.println("Registrado");
+
         } catch (Exception e){
             e.printStackTrace();
             request.setAttribute("msj","Error!");

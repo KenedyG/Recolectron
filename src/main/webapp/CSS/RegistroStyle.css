@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    background: #587ea1;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; /* Ajusta el padding si es necesario */
+    width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Asegura que esté pegada a la parte superior */
+    left: 0; /* Asegura que esté pegada al borde izquierdo */
+    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+}
+
+.logo {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+}
+
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #8bc898, #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px; /* Ajusta para compensar la altura de la barra de navegación */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 350px; /* Ajusta el ancho según sea necesario */
+    max-width: 100%;
+    min-height: 500px; /* Ajusta la altura según sea necesario */
+    margin: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #5ac36f;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    width: 300px; /* Ancho del formulario */
+    text-align: center;
+    margin: 20px;
+}

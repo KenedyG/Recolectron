@@ -110,6 +110,8 @@ public class RegistroDAO {
             result = state.executeQuery();
             if(result.next()){
                 String pass = result.getString("password");
+                //Credenciales Hardcoded por el momento, no es buena practica, no debe ser asi
+                //pero hasta no tener claro lo de rol funciona asi.
                 if("Admin".equals(usuario) && "R3c0AAdmin".equals(password)){
                     existe = true;
                     System.out.println("Admin");
@@ -130,6 +132,7 @@ public class RegistroDAO {
         }
         return existe;
     }
+    //Pendiente de aprobacion, funcion para comprobacion de rol teorica
     public int detector(String usuario) {
         Connection con = null;
         PreparedStatement state = null;
@@ -138,7 +141,7 @@ public class RegistroDAO {
 
         try{
             con = Conexion.getConnection();
-            state = con.prepareStatement("SELECT status FROM login WHERE usuario = ?");
+            state = con.prepareStatement("SELECT status FROM registro WHERE usuario = ?");
             state.setString(1, usuario);
             result = state.executeQuery();
             if(result.next()){
