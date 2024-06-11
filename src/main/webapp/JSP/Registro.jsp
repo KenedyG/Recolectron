@@ -24,7 +24,7 @@
         <form action="<%= request.getContextPath()%>/SVLogin" method="post" class="form-sign-in">
             <h1>Inicio de Sesión</h1>
             <input type="text" name="Usuario" id="usuario2" placeholder="Usuario" required>
-            <input type="password" name="Contraseña" id="pswd2" placeholder="Contraseña" required>
+            <input type="password" name="Password" id="pswd2" placeholder="Contraseña" required>
             <input type="submit" value="Iniciar Sesión">
         </form>
     </div>

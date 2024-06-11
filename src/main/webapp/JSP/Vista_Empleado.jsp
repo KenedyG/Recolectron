@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Vista Empleado</title>
 </head>
 <body>
+<h1>ERE EMPLEAO</h1>
+
 
 </body>
 </html>

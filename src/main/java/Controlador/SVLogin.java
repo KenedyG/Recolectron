@@ -20,17 +20,22 @@ public class SVLogin extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        String user = request.getParameter("usuario");
-        String pass = request.getParameter("password");
+        String user = request.getParameter("Usuario");
+        String pass = request.getParameter("Password");
+        System.out.println("Usuario recibido: " + user);
+        System.out.println("Contraseña recibida: " + pass);
+        request.setAttribute("usuario",user);
+
         try {
             boolean status = registroDAO.validar(user, pass);
+            System.out.println("Estado de validación: " + status);
             HttpSession session = request.getSession();
             if(status){
-                request.setAttribute("usuario",user);
-                request.getRequestDispatcher("./JSP/Vista_Admin.jsp");
+                System.out.println("Redirigiendo a Vista_Admin.jsp");
+                response.sendRedirect(request.getContextPath() + "/JSP/Vista_Admin.jsp");
             }else{
-                request.setAttribute("usuario",user);
-                request.getRequestDispatcher("./JSP/Vista_Empleado");
+                System.out.println("Redirigiendo a Vista_Empleado.jsp");
+                response.sendRedirect(request.getContextPath() + "/JSP/Vista_Empleado.jsp");
 
             }
         } catch (Exception e){

@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Arreglados la logica de Login falta implementacion del fixeo de la BD, Login Teorico funcionando.">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +204,8 @@
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
       <workItem from="1718038342271" duration="4043000" />
+      <workItem from="1718087862488" duration="192000" />
+      <workItem from="1718123310796" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -425,7 +431,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718067225426</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
+      <option name="closed" value="true" />
+      <created>1718088047511</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718088047511</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +477,8 @@
     <MESSAGE value="Vistas empezadas, comienzo de la logica de redireccionamiento, validacion de usuarios y manejo de roles" />
     <MESSAGE value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
     <MESSAGE value="Cambios en los JB y constructos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios en los JB y constructos" />
+    <MESSAGE value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

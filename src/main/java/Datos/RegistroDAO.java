@@ -105,8 +105,9 @@ public class RegistroDAO {
         boolean existe = false;
         try {
             con = Conexion.getConnection();
-            state = con.prepareStatement("SELECT password FROM login WHERE usuario = ?");
+            state = con.prepareStatement("SELECT password FROM registro WHERE usuario = ?");
             state.setString(1, usuario);
+            result = state.executeQuery();
             if(result.next()){
                 String pass = result.getString("password");
                 if("Admin".equals(usuario) && "R3c0AAdmin".equals(password)){

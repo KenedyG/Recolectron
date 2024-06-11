@@ -27,7 +27,6 @@ public class RegistroEDAO {
             state = con.prepareStatement(selectSQL);
             result = state.executeQuery();
             while (result.next()) {
-                int idRegistroEgreso = result.getInt("idRegistroEgreso");
                 String Nombre = result.getString("Nombre");
                 String Matricula = result.getString("Matricula");
                 String Materia = result.getString("Materia");
@@ -35,7 +34,7 @@ public class RegistroEDAO {
                 String donativo = result.getString("donativo");
                 Date fecha = result.getDate("fecha");
                 int idelectronico = result.getInt("idelectronico");
-                RegistroEgresoJB registro = new RegistroEgresoJB(idRegistroEgreso,Nombre,Matricula,Materia,nivelacademico,donativo,fecha,idelectronico);
+                RegistroEgresoJB registro = new RegistroEgresoJB(Nombre,Matricula,Materia,nivelacademico,donativo,fecha);
                 registroeJB.add(registro);
             }
 

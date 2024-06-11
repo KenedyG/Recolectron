@@ -21,7 +21,7 @@ public class SVDonativo extends HttpServlet {
         String nombre = request.getParameter("nombre");
         String nombreObjeto = request.getParameter("nombreObjeto");
                 try{
-                    donativoJB = new DonativoJB(0,nombre,nombreObjeto);
+                    donativoJB = new DonativoJB(nombre,nombreObjeto);
                     donativoDAO.agregar(donativoJB);
                 }catch (Exception e){
                     e.printStackTrace();
