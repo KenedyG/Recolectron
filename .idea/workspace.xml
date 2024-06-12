@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Registro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/InventarioJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/InventarioJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,9 @@
     &quot;accountId&quot;: &quot;32be2532-4c22-4c7a-bd72-ceaec8c4ef8f&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -439,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718088047511</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro">
+      <option name="closed" value="true" />
+      <created>1718136926768</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718136926768</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +486,8 @@
     <MESSAGE value="Arreglada la logica de funcionamiento de Login y Registro, falta arreglar errores en los DAO y JB para la insercion de datos acorde a la version 2 de la DB" />
     <MESSAGE value="Cambios en los JB y constructos" />
     <MESSAGE value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
+    <MESSAGE value="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
