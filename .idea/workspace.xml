@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Inventario creado, debugging listo pero falta comprobar la funcionalidad del JSP">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Manejo de Inventario completado :D">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/ModInventario.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/InventarioJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/InventarioJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JS/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JS/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -204,7 +213,7 @@
       <workItem from="1718087862488" duration="192000" />
       <workItem from="1718123310796" duration="2979000" />
       <workItem from="1718170567936" duration="96000" />
-      <workItem from="1718208429660" duration="4811000" />
+      <workItem from="1718208429660" duration="14197000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -454,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718170657689</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Manejo de Inventario completado :D">
+      <option name="closed" value="true" />
+      <created>1718213269626</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718213269626</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +512,8 @@
     <MESSAGE value="Login arreglado, planteamiento diferente de Base de Datos implementado, Servlet, Dao y Registro completado" />
     <MESSAGE value="Registro de Alumnos para el administrador, Logout completado, arreglado el error del JB de Registro" />
     <MESSAGE value="Inventario creado, debugging listo pero falta comprobar la funcionalidad del JSP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inventario creado, debugging listo pero falta comprobar la funcionalidad del JSP" />
+    <MESSAGE value="Manejo de Inventario completado :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manejo de Inventario completado :D" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -5,6 +5,7 @@ import java.sql.Date;
 
 public class SolicitudesJB implements Serializable {
     private static final long serialVersionUID = 1L;
+    private int idSolicitud;
     private int noequipo;
     private Date fechaSolicitud;
     private Date fechaUso;
@@ -13,7 +14,7 @@ public class SolicitudesJB implements Serializable {
 
     public SolicitudesJB() {}
 
-    public SolicitudesJB(int noequipo, Date fechaSolicitud, Date fechaUso, String status, int idSolicitudes) {
+    public SolicitudesJB(int idSolicitud, int noequipo, Date fechaSolicitud, Date fechaUso, String status, int idalumno) {
     }
 
     public int getNoequipo() {

@@ -98,10 +98,6 @@
             border-radius: 5px;
         }
 
-        .btn-modificar {
-            background-color: #008CBA; /* Blue */
-        }
-
         .btn-eliminar {
             background-color: #f44336; /* Red */
         }
@@ -145,12 +141,9 @@
             <td><%= inventario.getStatus() %></td>
             <td><%= inventario.getStock() %></td>
             <td>
-                <form action="SVInventario" method="post">
-                    <input type="hidden" name="action" value="modificar">
-                    <input type="hidden" name="id" value="<%= inventario.getIdelectronico() %>">
-                    <button type="submit" class="btn btn-modificar">Modificar</button>
+                <a href="ModInventario.jsp">Modificar</a>
                 </form>
-                <form action="SVInventario" method="post">
+                <form action="<%= request.getContextPath()%>/SVMInventario" method="post">
                     <input type="hidden" name="action" value="eliminar">
                     <input type="hidden" name="id" value="<%= inventario.getIdelectronico() %>">
                     <button type="submit" class="btn btn-eliminar">Eliminar</button>

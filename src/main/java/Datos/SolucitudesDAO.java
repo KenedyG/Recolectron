@@ -30,7 +30,7 @@ public class SolucitudesDAO {
          String status = Result.getString("status");
          int id_alumno = Result.getInt("id_alumno ");
 
-         SolicitudesJB Solicitudes = new SolicitudesJB( noequipo, fecha_solicitud, fecha_uso, status, id_solicitudes);
+         SolicitudesJB Solicitudes = new SolicitudesJB(id_solicitudes, noequipo, fecha_solicitud, fecha_uso, status,id_alumno);
          solicitudes.add(Solicitudes);
      }
    }catch (Exception e) {

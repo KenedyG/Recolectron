@@ -8,7 +8,7 @@ public class InventarioJB implements Serializable {
     private String fabricante;
     private String modelo;
     private String especificaciones;
-    private String peso;
+    private int peso;
     private String status;
     private int stock;
 
@@ -53,11 +53,11 @@ public class InventarioJB implements Serializable {
         this.especificaciones = especificaciones;
     }
 
-    public String getPeso() {
+    public int getPeso() {
         return peso;
     }
 
-    public void setPeso(String peso) {
+    public void setPeso(int peso) {
         this.peso = peso;
     }
 

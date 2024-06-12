@@ -10,8 +10,8 @@ import Modelo.InventarioJB;
 public class InventarioDAO {
     private static final String selectSQL = "SELECT * FROM inventario";
     private static final String insertSQL = "INSERT INTO inventario (nombre, fabricante, modelo, especificaciones, peso, status, stock) VALUES (?, ?, ?, ?, ?, ?, ?)";
-    private static final String updateSQL = "UPDATE inventario SET nombre = ?, fabricante = ?, modelo = ?, especificaciones = ?, peso = ?, status = ?, stock = ? WHERE idelectronico = ?";
-    private static final String deleteSQL = "DELETE FROM inventario WHERE idelectronico = ?";
+    private static final String updateSQL = "UPDATE inventario SET nombre = ?, fabricante = ?, modelo = ?, especificaciones = ?, peso = ?, status = ?, stock = ? WHERE id_electronico = ?";
+    private static final String deleteSQL = "DELETE FROM inventario WHERE id_electronico = ?";
 
     public List<InventarioJB> listar() {
         Connection con = null;
@@ -35,12 +35,13 @@ public class InventarioDAO {
                 inventario.setFabricante(result.getString("fabricante"));
                 inventario.setModelo(result.getString("modelo"));
                 inventario.setEspecificaciones(result.getString("especificaciones"));
-                inventario.setPeso(result.getString("peso"));
+                inventario.setPeso(result.getInt("peso"));
                 inventario.setStatus(result.getString("status"));
                 inventario.setStock(result.getInt("stock"));
 
                 inventariojb.add(inventario);
                 debugList.add(inventario);
+                /*
                 System.out.println("Lista de Debugging:");
                 for (InventarioJB item : debugList) {
                     System.out.println("ID: " + item.getIdelectronico());
@@ -53,6 +54,7 @@ public class InventarioDAO {
                     System.out.println("Stock: " + item.getStock());
                     System.out.println("------------------------------------");
                 }
+                */
 
             }
 
@@ -73,7 +75,7 @@ public class InventarioDAO {
             state.setString(2, inventario.getFabricante());
             state.setString(3, inventario.getModelo());
             state.setString(4, inventario.getEspecificaciones());
-            state.setString(5, inventario.getPeso());
+            state.setInt(5, inventario.getPeso());
             state.setString(6, inventario.getStatus());
             state.setInt(7, inventario.getStock());
             state.executeUpdate();
@@ -97,7 +99,7 @@ public class InventarioDAO {
             state.setString(2, inventario.getFabricante());
             state.setString(3, inventario.getModelo());
             state.setString(4, inventario.getEspecificaciones());
-            state.setString(5, inventario.getPeso());
+            state.setInt(5, inventario.getPeso());
             state.setString(6, inventario.getStatus());
             state.setInt(7, inventario.getStock());
             state.setInt(8, inventario.getIdelectronico()); // Corregido: agregar el campo idelectronico para el WHERE
@@ -118,12 +120,51 @@ public class InventarioDAO {
             con = Conexion.getConnection();
             state = con.prepareStatement(deleteSQL);
             state.setInt(1, inventario.getIdelectronico());
+            System.out.println("SQL para eliminar: " + state.toString()); // Agrega este registro para verificar la sentencia SQL generada
+
             state.executeUpdate();
+            System.out.println("Objeto eliminado correctamente");
         } catch (Exception e) {
             e.printStackTrace();
+            System.out.println("Error al eliminar el objeto");
         } finally {
             Conexion.close(state);
             Conexion.close(con);
         }
+    }
+
+    public InventarioJB InventarioID(int id) {
+        InventarioJB inventario = new InventarioJB();
+        Connection con = null;
+        PreparedStatement state = null;
+        ResultSet result = null;
+        try{
+            con = Conexion.getConnection();
+            state = con.prepareStatement("SELECT * FROM inventario WHERE id_electronico = ?");
+            state.setInt(1, id);
+            result = state.executeQuery();
+            if (result.next()) {
+                inventario = new InventarioJB();
+                inventario.setIdelectronico(result.getInt("id_electronico"));
+                inventario.setNombre(result.getString("nombre"));
+                inventario.setFabricante(result.getString("fabricante"));
+                inventario.setModelo(result.getString("modelo"));
+                inventario.setEspecificaciones(result.getString("especificaciones"));
+                inventario.setPeso(result.getInt("peso"));
+                inventario.setStatus(result.getString("status"));
+                inventario.setStock(result.getInt("stock"));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Conexion.close(result);
+            Conexion.close(state);
+            Conexion.close(con);
+        }
+        /*Debug*/
+        if (inventario != null) {
+            System.out.println("Objeto inventario modificado: " + inventario);
+        }
+        return inventario;
     }
 }
