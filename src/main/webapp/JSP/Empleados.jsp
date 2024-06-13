@@ -14,7 +14,7 @@
     List<AsistenciasJB> asistenciasJBList = (List<AsistenciasJB>) request.getAttribute("Asistencia");
 
     if(asistenciasJBList == null || asistenciasJBList.isEmpty()){
-        request.getRequestDispatcher("SVAsistencias ")
+        request.getRequestDispatcher("SVERAsistencias ").forward();
     }
 <html>
 <head>

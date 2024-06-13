@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Servlet de Solicitudes y emple">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Espacio de Empleados jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVERAsistencias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
     </list>
@@ -24,8 +24,8 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -460,7 +460,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718260371967</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Espacio de Empleados jsp">
+      <option name="closed" value="true" />
+      <created>1718261062258</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718261062258</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +510,8 @@
     <MESSAGE value="Cambios de SVSolicitudHi" />
     <MESSAGE value="Solicitudes.jsp y SVSolicitudes agregados y cambios" />
     <MESSAGE value="Servlet de Solicitudes y emple" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet de Solicitudes y emple" />
+    <MESSAGE value="Espacio de Empleados jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Espacio de Empleados jsp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
