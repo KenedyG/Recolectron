@@ -1,102 +1,132 @@
 package Datos;
-import Datos.Conexion;
+
 import Modelo.SolicitudesJB;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class SolucitudesDAO {
-    public static final String insertSQL = "INSERT INTO Solicitudes(noequipo,fecha_solicitud,fecha_uso,status) VALUES (?,?,?,?,?)";
-    public static final String updateSQL = "UPDATE Solicitudes SET fecha_solicitud=?,fecha_usolicitud=? WHERE id_solicitud=? ";
-    public static final String deleteSQL = "DELETE FROM Solicitudes WHERE id_solicitud =?";
+    public static final String insertSQL = "INSERT INTO solicitudes(noequipo, fecha_solicitud, fecha_uso, status, id_alumno) VALUES (?, ?, ?, ?, ?)";
+    public static final String updateSQL = "UPDATE solicitudes SET fecha_solicitud=?, fecha_uso=? WHERE id_solicitud=?";
+    public static final String deleteSQL = "DELETE FROM solicitudes WHERE id_solicitud =?";
 
+    public List<SolicitudesJB> solicitudes() {
+        Connection con = null;
+        PreparedStatement state = null;
+        ResultSet result = null;
 
+        List<SolicitudesJB> solicitudes = new ArrayList<>();
+        try {
+            con = Conexion.getConnection();
+            state = con.prepareStatement("SELECT id_solicitud, noequipo, fecha_solicitud, fecha_uso, status, id_alumno FROM solicitudes");
+            result = state.executeQuery();
 
- public List<SolicitudesJB> solicitudes(){
-     Connection con = null;
-     PreparedStatement state = null;
-     ResultSet Result = null;
+            while (result.next()) {
+                SolicitudesJB solicitud = new SolicitudesJB();
+                int id_solicitud = result.getInt("id_solicitud");
+                int noequipo = result.getInt("noequipo");
+                Timestamp fecha_solicitud = result.getTimestamp("fecha_solicitud");
+                Timestamp fecha_uso = result.getTimestamp("fecha_uso");
+                String status = result.getString("status");
+                int id_alumno = result.getInt("id_alumno");
 
-     List<SolicitudesJB> solicitudes = new ArrayList<>();
-   try {
-      con = Conexion.getConnection();
-     Result = state.executeQuery();
-     while (Result.next()) {
-         int id_solicitudes = Result.getInt("id_solicitud");
-         int noequipo = Result.getInt("noequipo");
-         Date fecha_solicitud = Result.getDate("fecha_solicitud ");
-         Date fecha_uso = Result.getDate("fecha_uso ");
-         String status = Result.getString("status");
-         int id_alumno = Result.getInt("id_alumno ");
+                // Asignar valores al objeto SolicitudesJB
+                solicitud.setIdSolicitud(id_solicitud);
+                solicitud.setNoequipo(noequipo);
+                solicitud.setFechaSolicitud(fecha_solicitud);
+                solicitud.setFechaUso(fecha_uso);
+                solicitud.setStatus(status);
+                solicitud.setIdalumno(id_alumno);
 
-         SolicitudesJB Solicitudes = new SolicitudesJB(id_solicitudes, noequipo, fecha_solicitud, fecha_uso, status,id_alumno);
-         solicitudes.add(Solicitudes);
-     }
-   }catch (Exception e) {
-   e.printStackTrace();
-   }finally {
-    Conexion.close(Result);
-    Conexion.close(state);
-    Conexion.close(con);
-   }
-   return solicitudes;
- }
+                /*Debug*/
+                System.out.println("ID Solicitud: " + id_solicitud);
+                System.out.println("Número de Equipo: " + noequipo);
+                System.out.println("Fecha de Solicitud: " + fecha_solicitud);
+                System.out.println("Fecha de Uso: " + fecha_uso);
+                System.out.println("Status: " + status);
+                System.out.println("ID Alumno: " + id_alumno);
 
- public void agregarSolicitud (SolicitudesJB solicitudes){
-     Connection con = null;
-     PreparedStatement state = null;
-     try {
-         con = Conexion.getConnection();
-         state = con.prepareStatement(insertSQL);
+                solicitudes.add(solicitud);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.close(result);
+            Conexion.close(state);
+            Conexion.close(con);
+        }
+        return solicitudes;
+    }
 
-         state.setInt(1,solicitudes.getNoequipo());
-         state.setDate(2,solicitudes.getFechaSolicitud());
-         state.setDate(3,solicitudes.getFechaUso());
-         state.setString(4,solicitudes.getStatus());
+    public void agregarSolicitud(SolicitudesJB solicitud) {
+        Connection con = null;
+        PreparedStatement state = null;
+        try {
+            con = Conexion.getConnection();
+            state = con.prepareStatement(insertSQL);
 
-         state.executeUpdate();
-     } catch (SQLException e) {
-         throw new RuntimeException(e);
-     }finally {
+            state.setInt(1, solicitud.getNoequipo());
+            state.setTimestamp(2, solicitud.getFechaSolicitud());
+            state.setTimestamp(3, solicitud.getFechaUso());
+            state.setString(4, solicitud.getStatus());
+            state.setInt(5, solicitud.getIdalumno());
 
-         Conexion.close(state);
-         Conexion.close(con);
-     }
-     }
-    public int modificarSolicitud (SolicitudesJB solicitudes){
+            /*Debug*/
+            System.out.println("Agregar Solicitud: ");
+            System.out.println("No. de Equipo: " + solicitud.getNoequipo());
+            System.out.println("Fecha de Solicitud: " + solicitud.getFechaSolicitud());
+            System.out.println("Fecha de Uso: " + solicitud.getFechaUso());
+            System.out.println("Status: " + solicitud.getStatus());
+            System.out.println("ID Alumno: " + solicitud.getIdalumno());
+
+            state.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            Conexion.close(state);
+            Conexion.close(con);
+        }
+    }
+
+    public int modificarSolicitud(SolicitudesJB solicitud) {
         Connection con = null;
         PreparedStatement state = null;
         int registros = 0;
 
-        try{
+        try {
             con = Conexion.getConnection();
             state = con.prepareStatement(updateSQL);
 
-            state.setInt(2,solicitudes.getNoequipo());
-            state.setDate(3,(solicitudes.getFechaSolicitud()));
+            state.setTimestamp(1, solicitud.getFechaSolicitud());
+            state.setTimestamp(2, solicitud.getFechaUso());
+            state.setInt(3, solicitud.getIdSolicitud());
+
+            registros = state.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        } finally {
+            Conexion.close(state);
+            Conexion.close(con);
         }
 
         return registros;
     }
-    public void eliminarSolicitud(SolicitudesJB solicitudes){
+
+    public void eliminarSolicitud(int idSolicitud) {
         Connection con = null;
         PreparedStatement state = null;
         try {
             con = Conexion.getConnection();
             state = con.prepareStatement(deleteSQL);
 
-            state.setString(1, String.valueOf(solicitudes));
+            state.setInt(1, idSolicitud);
             state.executeUpdate();
 
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             Conexion.close(state);
             Conexion.close(con);
         }
     }
- }
-
+}

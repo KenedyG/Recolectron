@@ -27,7 +27,7 @@
             <h1>Bienvenido, Empleado</h1>
             <ul>
                 <li><a href="Inventario.jsp">Ir a Inventario</a></li>
-                <li><a href="Solicitudes.jsp">Seleccionar Horario</a></li>
+                <li><a href="Solicitudes.jsp">Administrador de Horarios</a></li>
             </ul>
         </div>
     </div>

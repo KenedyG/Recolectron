@@ -34,14 +34,12 @@ public class SVRegistro extends HttpServlet {
         System.out.println("Usuario recibido: " + usuario);
         System.out.println("Contraseña recibida: " + password);
         try {
-            registroJB = new RegistroJB(nombre,apellidoP,apellidoM,correo,usuario,password);
+            registroJB = new RegistroJB(nombre, apellidoP, apellidoM, correo, usuario, password);
             registroDAO.agregarRegistro(registroJB);
             System.out.println("Registrado");
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-            request.setAttribute("msj","Error!");
-            request.getRequestDispatcher("error.jsp").forward(request,response);
         }
     }
 }

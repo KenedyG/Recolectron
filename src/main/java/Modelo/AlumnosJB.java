@@ -12,6 +12,12 @@ public class AlumnosJB implements Serializable {
     public AlumnosJB(){
 
     }
+
+    public AlumnosJB(String nombre, String materia) {
+        this.nombre = nombre;
+        this.materia = materia;
+    }
+
     public int getIdalumno() {
         return idalumno;
     }

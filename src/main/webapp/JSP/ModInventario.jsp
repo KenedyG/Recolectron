@@ -61,7 +61,6 @@
             cursor: pointer;
         }
         body {
-            background-color: #587ea1; /* Color azul */
             font-family: 'Satoshi', sans-serif; /* Fuente Satoshi */
         }
 

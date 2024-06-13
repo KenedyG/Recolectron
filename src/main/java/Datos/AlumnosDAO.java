@@ -14,21 +14,30 @@ public class AlumnosDAO {
     private static final String updateSQL = "UPDATE alumnos SET nombre = ?, materia = ? WHERE id_alumno";
     private static final String deleteSQL = "DELETE FROM alumnos WHERE id_alumno  = ? ";
 
-    public List<AlumnosDAO> listar() {
+    public List<AlumnosJB> listar() {
         Connection con = null;
         PreparedStatement state = null;
         ResultSet result = null;
 
-        List<AlumnosDAO> alumnosDAOS = new ArrayList<>();
+        List<AlumnosJB> alumnosDAOS = new ArrayList<>();
 
         try {
             con = Conexion.getConnection ();
             state = con.prepareStatement("SELECT * FROM Alumnos");
             result = state.executeQuery();
             while (result.next()) {
+                AlumnosJB alumno = new AlumnosJB();
                 int id_alumno = result.getInt("id_alumno");
                 String nombre = result.getString("nombre");
                 String materia = result.getString("Materia");
+                alumno.setIdalumno(id_alumno);
+                alumno.setNombre(nombre);
+                alumno.setMateria(materia);
+                alumnosDAOS.add(alumno);
+
+                System.out.println(id_alumno);
+                System.out.println(nombre);
+                System.out.println(materia);
             }
 
             }catch (Exception e){
@@ -46,8 +55,7 @@ public class AlumnosDAO {
             con = Conexion.getConnection();
             state = con.prepareStatement(insertSQL);
 
-            state.setInt(1,Alumnos.getIdalumno());
-            state.setString(2,Alumnos.getNombre());
+            state.setString(1,Alumnos.getNombre());
             state.setString(2,Alumnos.getMateria());
             state.executeUpdate();
         } catch (SQLException e) {

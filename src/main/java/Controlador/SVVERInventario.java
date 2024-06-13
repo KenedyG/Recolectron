@@ -23,21 +23,6 @@ public class SVVERInventario extends HttpServlet {
         InventarioDAO inventarioDAO = new InventarioDAO();
         List<InventarioJB> inventario = inventarioDAO.listar();
 
-        /* Debugging, dios si existe
-        System.out.println("Lista de inventario recibida en el servlet:");
-        for (InventarioJB item : inventario) {
-            System.out.println("------------------------------------");
-            System.out.println("ID: " + item.getIdelectronico());
-            System.out.println("Nombre: " + item.getNombre());
-            System.out.println("Fabricante: " + item.getFabricante());
-            System.out.println("Modelo: " + item.getModelo());
-            System.out.println("Especificaciones: " + item.getEspecificaciones());
-            System.out.println("Peso: " + item.getPeso());
-            System.out.println("Status: " + item.getStatus());
-            System.out.println("Stock: " + item.getStock());
-            System.out.println("------------------------------------");
-        }
-        */
         //Se manda el objeto como atributo con nombre inventario, CONSTA QUE SI RECIBE LA LISTA ENTERA :'D
         request.setAttribute("inventario", inventario);
         //Se redirige al JSP, no funcionaba antes porque aputaba al mismo servlet, pido perdon
