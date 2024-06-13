@@ -2,6 +2,7 @@ package Modelo;
 
 import java.io.*;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class SolicitudesJB implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -28,7 +29,7 @@ public class SolicitudesJB implements Serializable {
     public Date getFechaSolicitud() {
         return fechaSolicitud;
     }
-    public void setFechaSolicitud(Date fechaSolicitud) {
+    public void setFechaSolicitud(Timestamp fechaSolicitud) {
         this.fechaSolicitud = fechaSolicitud;
     }
     public Date getFechaUso() {
