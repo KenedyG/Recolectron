@@ -3,9 +3,12 @@ package Controlador;
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import Datos.InventarioDAO;
 import Datos.SolucitudesDAO;
+import Modelo.InventarioJB;
 import Modelo.SolicitudesJB;
 
 import java.io.IOException;
@@ -18,11 +21,12 @@ public class SVVerSolicitudes extends HttpServlet {
     private SolucitudesDAO solucitudesDAO = new SolucitudesDAO();
     private SolicitudesJB solicitudesJB = new SolicitudesJB();
 
-    public <httpServletRequest> void doGet(httpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        SolucitudesDAO solucitudesDAO = new SolucitudesDAO();
-        List<SolicitudesJB> solicitudesJBList = (List<SolicitudesJB>) solucitudesDAO;
-        request.getRequestDispatcher("./JSP/JSP").forward(request, response);
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws  ServletException, IOException{
 
+        SolucitudesDAO solucitudesDAO1 = new SolucitudesDAO();
+        List<SolicitudesJB> solicitudesJBList = solucitudesDAO1.solicitudes();
+        request.setAttribute("Solicitudes",solucitudesDAO1);
+        request.getRequestDispatcher("./JSP/Solicitudes.JSP").forward(request,response);
     }
 }
 

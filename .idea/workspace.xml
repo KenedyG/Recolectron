@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Espacio de Empleados jsp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVERAsistencias.java" afterDir="false" />
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Servlet para ver la asistencias de empleados">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVerSolicitudes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVerSolicitudes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -468,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718261062258</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Servlet para ver la asistencias de empleados">
+      <option name="closed" value="true" />
+      <created>1718262599716</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1718262599716</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -486,7 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Primer Commi" />
     <MESSAGE value="Primer Commit" />
     <MESSAGE value="actualizacion del pom" />
     <MESSAGE value="creacion de carpetas" />
@@ -511,7 +518,19 @@
     <MESSAGE value="Solicitudes.jsp y SVSolicitudes agregados y cambios" />
     <MESSAGE value="Servlet de Solicitudes y emple" />
     <MESSAGE value="Espacio de Empleados jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Espacio de Empleados jsp" />
+    <MESSAGE value="Servlet para ver la asistencias de empleados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet para ver la asistencias de empleados" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
