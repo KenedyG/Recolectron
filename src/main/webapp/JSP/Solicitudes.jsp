@@ -20,6 +20,7 @@
         return; // Se detiene
     }
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
