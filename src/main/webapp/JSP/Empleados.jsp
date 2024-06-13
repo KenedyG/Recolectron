@@ -9,7 +9,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="Modelo.AsistenciasJB" %>
 
-
 <%
     List<AsistenciasJB> asistenciasJBList = (List<AsistenciasJB>) request.getAttribute("Asistencia");
 
@@ -128,7 +127,7 @@
             <td>
                 <a href="ModInventario.jsp">Modificar</a>
                 </form>
-                <form action="<%= request.getContextPath()%>/SVMInventario" method="post">
+                <form action="<%= request.getContextPath()%>/SVERAsistencias" method="post">
                     <input type="hidden" name="action" value="eliminar">
                     <input type="hidden" name="id" value="<%= asistencias.getId_User() %>">
                     <button type="submit" class="btn btn-eliminar">Eliminar</button>

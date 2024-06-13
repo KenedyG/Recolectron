@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Servlet para ver la asistencias de empleados">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Vista empleados y debug de jb de SolicitudesJB">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_07_01_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_18_p__m___Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2024_11_50_p__m___Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVerSolicitudes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVerSolicitudes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/SolicitudesJB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,6 +201,7 @@
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
       <workItem from="1718038342271" duration="4043000" />
+      <workItem from="1718290715726" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -476,7 +475,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718262599716</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Vista empleados y debug de jb de SolicitudesJB">
+      <option name="closed" value="true" />
+      <created>1718263980710</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718263980710</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Primer Commit" />
     <MESSAGE value="actualizacion del pom" />
     <MESSAGE value="creacion de carpetas" />
     <MESSAGE value="Testeo de Propiedades de Intellij" />
@@ -519,7 +525,8 @@
     <MESSAGE value="Servlet de Solicitudes y emple" />
     <MESSAGE value="Espacio de Empleados jsp" />
     <MESSAGE value="Servlet para ver la asistencias de empleados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet para ver la asistencias de empleados" />
+    <MESSAGE value="Vista empleados y debug de jb de SolicitudesJB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vista empleados y debug de jb de SolicitudesJB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
