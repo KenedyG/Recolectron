@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 public class SolicitudesJB implements Serializable {
     private static final long serialVersionUID = 1L;
     private int noequipo;
-    private Date fechaSolicitud;
+    private Timestamp fechaSolicitud;
     private Date fechaUso;
     private String status;
     private int idalumno;
@@ -26,7 +26,7 @@ public class SolicitudesJB implements Serializable {
     public void setNoequipo(int Noequipo) {
         this.noequipo = Noequipo;
     }
-    public Date getFechaSolicitud() {
+    public Timestamp getFechaSolicitud() {
         return fechaSolicitud;
     }
     public void setFechaSolicitud(Timestamp fechaSolicitud) {
