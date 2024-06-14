@@ -4,42 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Servlet para ver la asistencias de empleados">
+    <list default="true" id="4e859b07-9af7-497c-9f75-c1dd3128bd0a" name="Changes" comment="Vista empleados y debug de jb de SolicitudesJB">
       <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativoR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVERgresoL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVEgreso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistrarA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistroL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Asistencia.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Donativo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_06_2024_03_53_p__m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_06_2024_03_53_p_ m__[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVAlumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVAlumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVDonativo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVERAsistencias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVERAsistencias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVMODInventario2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVRegistro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVSolicitudes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controlador/SVVERInventario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/AsistenciasDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/AsistenciasDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/DonativoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/DonativoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/InventarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/RegistroEDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datos/SolucitudesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/AsistenciasJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/AsistenciasJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modelo/RegistroEgresoJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/CSS/RegistroStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/CSS/RegistroStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JS/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Empleados.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/ModInventario.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/ModInventario.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Solicitudes.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/JSP/Vista_Empleado.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,10 +66,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Smart Tomcat.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.Recolectron.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SOTH/OneDrive/Escritorio/Idea Workspace/src/main/webapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kened/IdeaProjects/Inventario Recolectron/src/main/webapp&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -145,14 +113,14 @@
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="C:\Program Files (x86)\Apache Software Foundation\apache-tomcat-9.0.89\lib" />
+      <option name="catalinaBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron" />
       <option name="contextPath" value="/InventarioRecolectron" />
-      <option name="docBase" value="C:\Users\SOTH\OneDrive\Escritorio\Idea Workspace\src\main\webapp" />
+      <option name="docBase" value="C:\Users\kened\IdeaProjects\Inventario Recolectron\src\main\webapp" />
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.89" />
-          <option name="path" value="$PROJECT_DIR$/../../../../../Program Files (x86)/Apache Software Foundation/apache-tomcat-9.0.89" />
+          <option name="path" value="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/apache-tomcat-9.0.89" />
           <option name="version" value="9.0.89.0" />
         </TomcatInfo>
       </option>
@@ -230,11 +198,7 @@
       <workItem from="1717981824851" duration="2566000" />
       <workItem from="1717984534602" duration="977000" />
       <workItem from="1718038342271" duration="4043000" />
-      <workItem from="1718293639197" duration="1541000" />
-      <workItem from="1718295207296" duration="438000" />
-      <workItem from="1718295663513" duration="10674000" />
-      <workItem from="1718306420793" duration="15030000" />
-      <workItem from="1718323010874" duration="399000" />
+      <workItem from="1718290715726" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="Primer Commit">
       <option name="closed" value="true" />
@@ -508,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718262599716</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Vista empleados y debug de jb de SolicitudesJB">
+      <option name="closed" value="true" />
+      <created>1718263980710</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1718263980710</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Primer Commit" />
     <MESSAGE value="actualizacion del pom" />
     <MESSAGE value="creacion de carpetas" />
     <MESSAGE value="Testeo de Propiedades de Intellij" />
@@ -551,7 +522,19 @@
     <MESSAGE value="Servlet de Solicitudes y emple" />
     <MESSAGE value="Espacio de Empleados jsp" />
     <MESSAGE value="Servlet para ver la asistencias de empleados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet para ver la asistencias de empleados" />
+    <MESSAGE value="Vista empleados y debug de jb de SolicitudesJB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vista empleados y debug de jb de SolicitudesJB" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/JSP/Inventario.jsp</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
