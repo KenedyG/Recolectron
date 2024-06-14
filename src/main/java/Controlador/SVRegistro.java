@@ -27,12 +27,15 @@ public class SVRegistro extends HttpServlet {
         String correo = request.getParameter("Correo");
         String usuario = request.getParameter("Usuario");
         String password = request.getParameter("Password");
+        /* DEBUG
         System.out.println("Nombre: " + nombre);
         System.out.println("Apellido: " + apellidoP);
         System.out.println("Apellido: " + apellidoM);
         System.out.println("Correo: " + correo);
         System.out.println("Usuario recibido: " + usuario);
         System.out.println("Contraseña recibida: " + password);
+
+         */
         try {
             registroJB = new RegistroJB(nombre, apellidoP, apellidoM, correo, usuario, password);
             registroDAO.agregarRegistro(registroJB);

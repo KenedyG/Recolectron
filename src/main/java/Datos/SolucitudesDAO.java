@@ -30,7 +30,6 @@ public class SolucitudesDAO {
                 String status = result.getString("status");
                 int id_alumno = result.getInt("id_alumno");
 
-                // Asignar valores al objeto SolicitudesJB
                 solicitud.setIdSolicitud(id_solicitud);
                 solicitud.setNoequipo(noequipo);
                 solicitud.setFechaSolicitud(fecha_solicitud);

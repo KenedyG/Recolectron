@@ -18,7 +18,6 @@
     <div class="logo">RECOLECTRÓN</div>
     <div class="nav-items">
         <a href="<%=request.getContextPath()%>/SvLogout">Cerrar Sesión</a>
-        <a href="#">Marcar Salida</a>
     </div>
 </nav>
 <section class="content">
@@ -26,8 +25,10 @@
         <div class="opciones">
             <h1>Bienvenido, Empleado</h1>
             <ul>
-                <li><a href="Inventario.jsp">Ir a Inventario</a></li>
+                <li><a href="Inventario.jsp">Ir a Inventario y Egresos</a></li>
                 <li><a href="Solicitudes.jsp">Administrador de Horarios</a></li>
+                <li><a href="Asistencia.jsp">Marcar Entrada y Salida</a></li>
+                <li><a href="Donativo.jsp">Administrador de Donativos</a></li>
             </ul>
         </div>
     </div>

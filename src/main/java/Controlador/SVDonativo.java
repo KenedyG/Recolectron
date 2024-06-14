@@ -6,9 +6,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import Datos.DonativoDAO;
+import Datos.SolucitudesDAO;
 import Modelo.DonativoJB;
+import Modelo.SolicitudesJB;
 
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet(name = "SVDonativo", value = "/SVDonativo")
 public class SVDonativo extends HttpServlet {
@@ -18,12 +21,8 @@ public class SVDonativo extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String nombre = request.getParameter("nombre");
-        String nombreObjeto = request.getParameter("nombreObjeto");
-                try{
-                    donativoJB = new DonativoJB(nombre,nombreObjeto);
-                    donativoDAO.agregar(donativoJB);
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
+        DonativoDAO donativo1 = new DonativoDAO();
+        List<DonativoJB> donativoList = donativo1.listar();
+        request.setAttribute("donativos",donativoList);
+        request.getRequestDispatcher("./JSP/Donativo.jsp").forward(request,response);
 }}

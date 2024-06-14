@@ -19,10 +19,8 @@ public class SVMODInventario2 extends HttpServlet {
         String action = request.getParameter("action");
 
         if (action.equals("buscar")) {
-            // Acción: Buscar por ID
             buscarPorId(request, response);
         } else if (action.equals("modificar")) {
-            // Acción: Modificar inventario
             modificarInventario(request, response);
         } else if (action.equals("agregar")) {
             agregarAlInventario(request, response);

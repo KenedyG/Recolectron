@@ -10,15 +10,17 @@ public class RegistroEgresoJB implements Serializable {
     private String nombre;
     private String matricula;
     private String materia;
+    private String facultad;
+    private String carrera;
     private String nivelacademico;
-    private String donativo;
+    private double donativo;
     private Date fecha;
     private int idelectronico;
 
     public RegistroEgresoJB() {
 
     }
-    public RegistroEgresoJB(String nombre, String matricula, String materia, String nivelacademico, String donativo, Date fecha){
+    public RegistroEgresoJB(String nombre, String matricula, String materia,String facultad,String carrera, String nivelacademico, double donativo, Date fecha){
 
     }
     public int getIdRegistroEgreso() {
@@ -45,16 +47,28 @@ public class RegistroEgresoJB implements Serializable {
     public void setMateria(String materia) {
         this.materia = materia;
     }
+    public String getFacultad() {
+        return facultad;
+    }
+    public void setFacultad(String facultad) {
+        this.facultad = facultad;
+    }
+    public String getCarrera() {
+        return carrera;
+    }
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
     public String getNivelacademico() {
         return nivelacademico;
     }
     public void setNivelacademico(String nivelacademico) {
         this.nivelacademico = nivelacademico;
     }
-    public String getDonativo() {
+    public double getDonativo() {
         return donativo;
     }
-    public void setDonativo(String donativo) {
+    public void setDonativo(double donativo) {
         this.donativo = donativo;
     }
     public Date getFecha() {

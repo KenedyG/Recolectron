@@ -29,7 +29,6 @@ public class SVMODInventario extends HttpServlet {
         }
     }
     private void modificarInventario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //Usamos el metodo actualizarInventario del DAO
         int id = Integer.parseInt(request.getParameter("id"));
         String nombre = request.getParameter("nombre");
         String fabricante = request.getParameter("fabricante");
@@ -56,7 +55,6 @@ public class SVMODInventario extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/JSP/Inventario.jsp");
     }
     private void eliminarInventario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //Usamos el metodo de eliminarInventario del DAO
         int id = Integer.parseInt(request.getParameter("id"));
 
         InventarioJB inventario = new InventarioJB();

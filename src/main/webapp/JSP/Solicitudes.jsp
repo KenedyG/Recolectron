@@ -4,20 +4,17 @@
 <%@ page import="Modelo.AlumnosJB" %>
 
 <%
-    // Se recibe el atributo mencionado en el Servlet
     List<SolicitudesJB> solicitudList = (List<SolicitudesJB>) request.getAttribute("solicitudes");
     List<AlumnosJB> alumnoList = (List<AlumnosJB>) request.getAttribute("alumnos");
-    // Comprueba que la lista no esté vacía
     if (alumnoList == null || alumnoList.isEmpty()) {
-        // Llama al servlet si la lista es nula o está vacía
+
         request.getRequestDispatcher("/SVAlumno").forward(request, response);
-        return; // Se detiene
+        return;
     }
-    // Comprueba que la lista no esté vacía
+
     if (solicitudList == null || solicitudList.isEmpty()) {
-        // Llama al servlet si la lista es nula o está vacía
         request.getRequestDispatcher("/SVSolicitudes").forward(request, response);
-        return; // Se detiene
+        return;
     }
 %>
 
@@ -141,10 +138,9 @@
         </table>
     </div>
 
-    <!-- Contenedor del formulario para agregar solicitudes -->
     <div class="container form-container">
         <h2>Agregar Solicitud</h2>
-        <form action="AgregarSolicitudServlet" method="get">
+        <form action="<%= request.getContextPath()%>/SVSolicitudA" method="get">
             <div class="form-group">
                 <label for="noequipo">Número de Equipo:</label>
                 <input type="text" id="noequipo" name="noequipo" required>
@@ -179,7 +175,6 @@
     </div>
 
 
-    <!-- Contenedor del formulario para registrar alumnos -->
     <div class="container form-container">
         <h2>Registrar Alumno</h2>
         <form action="<%= request.getContextPath()%>/SVAlumnoRegistro" method="get">

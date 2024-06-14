@@ -21,9 +21,15 @@ public class SVSolicitudH extends HttpServlet {
 
 
         request.setAttribute("solicitudes", listaSolicitudes);
+        /*DEBUG
         System.out.println("VA DE REGRESO");
+
+         */
         request.getRequestDispatcher("/JSP/Solicitudes.jsp").forward(request, response);
-        System.out.println("REGRESE");
+        /*DEBUG
+        System.out.println("REGRESE");}
+
+         */
  
     }
 

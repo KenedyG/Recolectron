@@ -23,16 +23,17 @@ public class RegistroDAO {
             con = Conexion.getConnection();
             state = con.prepareStatement(selectSQL);
             result = state.executeQuery();
-            while(result.next()) {
-                String nombre = result.getString("nombre");
-                String apellidop = result.getString("apellidop");
-                String apellidom = result.getString("apellidom");
-                String correo = result.getString("correo");
-                String usuario = result.getString("usuario");
-                String password = result.getString("password");
+            while (result.next()) {
+                RegistroJB registro = new RegistroJB();
+                registro.setId_user(result.getInt("id_user"));
+                registro.setNombre(result.getString("nombre"));
+                registro.setApellidoP(result.getString("apellidop"));
+                registro.setApellidoM(result.getString("apellidom"));
+                registro.setCorreo(result.getString("correo"));
+                registro.setUsuario(result.getString("usuario"));
+                registro.setPassword(result.getString("password"));
 
-                RegistroJB listar = new RegistroJB(nombre,apellidop,apellidom,correo,usuario,password);
-                registroDAOS.add(listar);
+                registroDAOS.add(registro);
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -122,6 +123,7 @@ public class RegistroDAO {
                 }
             }else {
                 System.out.println("Usuario no ha encontrado");
+                
             }
         }catch (Exception e) {
             e.printStackTrace();

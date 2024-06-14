@@ -20,12 +20,12 @@ nav {
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem; /* Ajusta el padding si es necesario */
-    width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
-    position: fixed; /* Fija la barra de navegación en la parte superior */
-    top: 0; /* Asegura que esté pegada a la parte superior */
-    left: 0; /* Asegura que esté pegada al borde izquierdo */
-    z-index: 1000; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    padding: 0 2rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -43,7 +43,6 @@ nav a {
 
 body {
     background-color: #c9d6ff;
-    background: linear-gradient(to right, #8bc898, #ffffff);
     display: flex;
     align-items: center;
     justify-content: center;

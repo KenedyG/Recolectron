@@ -1,9 +1,11 @@
 package Modelo;
 import java.io.*;
+import java.sql.Timestamp;
+
 public class AsistenciasJB implements Serializable {
     private int id_asistencia;
-    private String horaentrada;
-    private String horasalida;
+    private Timestamp horaentrada;
+    private Timestamp horasalida;
     private int id_User;
 
     public AsistenciasJB(){};
@@ -16,11 +18,11 @@ public class AsistenciasJB implements Serializable {
         this.id_asistencia = id_asistencia;
     }
 
-    public String getHoraentrada() {
+    public Timestamp getHoraentrada() {
         return horaentrada;
     }
 
-    public void setHoraentrada(String horaentrada) {
+    public void setHoraentrada(Timestamp horaentrada) {
         this.horaentrada = horaentrada;
     }
 
@@ -32,11 +34,11 @@ public class AsistenciasJB implements Serializable {
         this.id_User = id_User;
     }
 
-    public String getHorasalida() {
+    public Timestamp getHorasalida() {
         return horasalida;
     }
 
-    public void setHorasalida(String horasalida) {
+    public void setHorasalida(Timestamp horasalida) {
         this.horasalida = horasalida;
     }
 }

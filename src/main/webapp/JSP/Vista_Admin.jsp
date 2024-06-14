@@ -28,7 +28,6 @@
                 <li><a href="Inventario.jsp">Ir a Inventario</a></li>
                 <li><a href="Solicitudes.jsp">Seleccionar Horario</a></li>
                 <li><a href="RegistroA.jsp">Dar de Alta Alumno</a></li>
-                <li><a href="RegistroA.jsp">Ver lista de Alumnos</a></li>
                 <li><a href="Empleados.jsp">ver lista de empleados</a></li>
             </ul>
         </div>

@@ -17,11 +17,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        nav {
+            background-color: #587ea1;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            color: #333;
+
+        }
+
+        .nav-items a:hover {
+            background-color: #45698e;
+        }
+
         h2{
             text-align: center;
         }
         h1{
           text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #333;
         }
         .container {
             display: flex;
@@ -67,6 +104,12 @@
     </style>
 
 </head>
+<nav>
+    <div class="logo">RECOLECTRÓN</div>
+    <div class="nav-items">
+        <a href="Vista_Empleado.jsp">Regresar a la pagina principal</a>
+    </div>
+</nav>
 <body>
 <h1>Status</h1>
 <% String mensaje = (String) request.getAttribute("mensaje"); %>
@@ -74,7 +117,6 @@
 <p><%= mensaje %></p>
 <% } %>
 <div class="container">
-    <!-- Mostrar y Modificar Inventario -->
     <div class="form-container">
         <h2>Buscar y Modificar Inventario</h2>
         <form action="<%= request.getContextPath()%>/ModificarInventario" method="post">
@@ -107,7 +149,6 @@
         <% } %>
     </div>
 
-    <!-- Añadir Objeto al Inventario -->
     <div class="form-container">
         <h2>Añadir Objeto al Inventario</h2>
         <form action="<%= request.getContextPath()%>/ModificarInventario" method="post">

@@ -102,7 +102,7 @@ public class InventarioDAO {
             state.setInt(5, inventario.getPeso());
             state.setString(6, inventario.getStatus());
             state.setInt(7, inventario.getStock());
-            state.setInt(8, inventario.getIdelectronico()); // Corregido: agregar el campo idelectronico para el WHERE
+            state.setInt(8, inventario.getIdelectronico());
             state.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
@@ -120,10 +120,16 @@ public class InventarioDAO {
             con = Conexion.getConnection();
             state = con.prepareStatement(deleteSQL);
             state.setInt(1, inventario.getIdelectronico());
-            System.out.println("SQL para eliminar: " + state.toString()); // Agrega este registro para verificar la sentencia SQL generada
+            /*
+            System.out.println("SQL para eliminar: " + state.toString());
+
+             */
 
             state.executeUpdate();
+            /*
             System.out.println("Objeto eliminado correctamente");
+
+             */
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error al eliminar el objeto");

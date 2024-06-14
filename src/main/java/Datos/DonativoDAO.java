@@ -6,7 +6,7 @@ import Modelo.DonativoJB;
 
 public class DonativoDAO {
     private static final String selectSQL = "SELECT * FROM donativo;";
-    private static final String insertSQL = "INSERT INTO donativo (id_donativo, nombre, nombreObjeto) VALUES (?, ?, ?)";
+    private static final String insertSQL = "INSERT INTO donativo (nombre, nombreObjeto) VALUES (?, ?)";
     private static final String updateSQL = "UPDATE donativo SET nombre = ?, nombreObjeto = ? WHERE id_donativo = ?";
 
     public List<DonativoJB> listar() {
@@ -20,11 +20,13 @@ public class DonativoDAO {
             state = con.prepareStatement(selectSQL);
             result = state.executeQuery();
             while (result.next()) {
+                DonativoJB donativo = new DonativoJB();
                 int id_donativo = result.getInt("id_donativo");
                 String nombre = result.getString("nombre");
                 String nombreObjeto = result.getString("nombreObjeto");
-
-                DonativoJB donativo = new DonativoJB(nombre, nombreObjeto);
+                donativo.setIdDonativo(id_donativo);
+                donativo.setNombre(nombre);
+                donativo.setNombreobjeto(nombreObjeto);
                 donativos.add(donativo);
             }
         } catch (SQLException e) {
@@ -37,15 +39,14 @@ public class DonativoDAO {
         return donativos;
     }
 
-    public void agregar(DonativoJB donativo) {
+    public void agregarDonativo(DonativoJB donativo) {
         Connection con = null;
         PreparedStatement state = null;
         try {
             con = Conexion.getConnection();
             state = con.prepareStatement(insertSQL);
-            state.setInt(1, donativo.getIdDonativo());
-            state.setString(2, donativo.getNombre());
-            state.setString(3, donativo.getNombreobjeto());
+            state.setString(1, donativo.getNombre());
+            state.setString(2, donativo.getNombreobjeto());
             state.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
